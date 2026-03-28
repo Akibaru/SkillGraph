@@ -19,8 +19,6 @@ pip install -r requirements.txt
 
 ## 2. Data
 
-The GitHub repo excludes raw and processed datasets because of size and redistribution concerns.
-
 Expected local layout:
 
 ```text
@@ -100,15 +98,6 @@ Important files in `skillgraph/src/`:
 - `gnn_transition.py`: GNN-based transition scoring baselines
 - `metrics_clean_eval.py`: cleaned evaluation helpers
 
-## 5. What Is Not Included in GitHub
+## 5. Notes
 
-By default, the repo ignores:
-
-- `skillgraph/data/raw/`
-- `skillgraph/data/processed/`
-- `skillgraph/models/`
-- `skillgraph/outputs/`
-
-This keeps the repository lightweight and GitHub-safe. If you want a full replication bundle, package those directories separately and distribute them as an external archive.
-
-The paper source is also intentionally kept out of the public GitHub repo until the preprint is released.
+Depending on which experiment you run, you may need local copies of datasets, cached features, or trained checkpoints under the corresponding `data/`, `models/`, and `outputs/` directories.

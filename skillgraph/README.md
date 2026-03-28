@@ -21,11 +21,11 @@ The code covers:
 skillgraph/
 ├── data/
 │   ├── download.sh
-│   ├── raw/                # local-only, ignored by git
-│   └── processed/          # local-only, ignored by git
-├── models/                 # local-only checkpoints, ignored by git
-├── outputs/                # generated plots / reports, ignored by git
-├── results/                # CSV/TXT experiment summaries kept in repo
+│   ├── raw/
+│   └── processed/
+├── models/
+├── outputs/
+├── results/                # CSV/TXT experiment summaries
 ├── src/
 │   ├── final_comparison.py
 │   ├── run_apibank_eval.py
@@ -71,16 +71,10 @@ python src/generate_figures.py
 
 ## Data Note
 
-Raw and processed datasets are intentionally excluded from GitHub because they are large. Put local copies under:
+Place local dataset files under:
 
 - `data/raw/`
 - `data/processed/`
-
-## Paper Source
-
-The paper itself lives in:
-
-- `../Paper/`
 
 For a higher-level repository overview and reproduction notes, see:
 

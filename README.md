@@ -7,9 +7,6 @@ SkillGraph models tool-order dependencies for LLM agents as a directed, weighted
 - **Stage 1**: Graph-Semantic Hybrid Retrieval (GS-Hybrid) for candidate tool selection
 - **Stage 2**: a learned pairwise reranker that orders the fixed candidate set with SkillGraph-derived features
 
-This repository focuses on the **code, experiment scripts, and result artifacts**.  
-The paper source is kept private for now and will be released separately after the arXiv version is posted.
-
 ## Highlights
 
 - ToolBench evaluation pipeline for large-scale tool recommendation
@@ -25,9 +22,9 @@ SkillGraph/
 ├── skillgraph/             # main codebase
 │   ├── src/                # experiment scripts
 │   ├── data/               # download helper + local dataset location
-│   ├── results/            # lightweight CSV / TXT outputs kept in repo
-│   ├── outputs/            # generated figures (ignored by git)
-│   ├── models/             # checkpoints / caches (ignored by git)
+│   ├── results/            # experiment CSV / TXT outputs
+│   ├── outputs/            # generated figures
+│   ├── models/             # checkpoints / caches
 │   ├── requirements.txt
 │   └── README.md
 ├── .gitignore
@@ -44,8 +41,6 @@ pip install -r requirements.txt
 ```
 
 ### 2. Prepare data
-
-The raw and processed datasets are **not committed** to GitHub because they are large and partly redistributed from external sources.
 
 - ToolBench trajectories should be placed under `skillgraph/data/raw/`
 - API-Bank data should be placed under `skillgraph/data/raw/API-Bank/`
@@ -76,10 +71,6 @@ python src/generate_figures.py
 - Reproduction notes: [`docs/REPRODUCE.md`](./docs/REPRODUCE.md)
 - Codebase notes: [`skillgraph/README.md`](./skillgraph/README.md)
 
-## Paper
-
-The preprint link will be added here after the arXiv version is released.
-
 ## Citation
 
-If you use this code, please cite the repository for now. A paper citation entry will be added once the preprint is public.
+If you use this code, please cite the repository. Citation metadata is provided in [`CITATION.cff`](./CITATION.cff).
