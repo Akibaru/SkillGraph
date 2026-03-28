@@ -100,4 +100,4 @@ Important files in `skillgraph/src/`:
 
 ## 5. Notes
 
-Depending on which experiment you run, you may need local copies of datasets, cached features, or trained checkpoints under the corresponding `data/`, `models/`, and `outputs/` directories.
+Depending on the experiment, some scripts expect local datasets under `data/`, trained checkpoints under `models/`, and generated artifacts or caches under `outputs/`.
