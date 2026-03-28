@@ -1,0 +1,9 @@
+method,label,precision_at_k,recall_at_k,f1_at_k,ordered_precision,lcs_r,transition_accuracy,first_tool_accuracy,latency_ms
+semantic_only,Semantic Only (BL),0.2647,0.3065,0.2795,0.1226,0.2597,0.0699,0.262,0.276
+beam,Beam Search,0.2154,0.2481,0.2271,0.1486,0.2127,0.0989,0.206,0.5743
+hybrid,Hybrid Sem-Graph,0.2588,0.2974,0.2725,0.1308,0.248,0.0825,0.262,0.6907
+ts_semantic_sort,TS + Sem-Sort (before),0.2529,0.2915,0.2665,0.1102,0.2507,0.0668,0.262,0.274
+ts_greedy_graph,TS + Greedy-Graph ★,0.2548,0.2934,0.2684,0.1083,0.2503,0.0661,0.262,0.0035
+ts_greedy_gnn,TS + Greedy-GNN ★,0.2511,0.2897,0.2647,0.1082,0.2494,0.0644,0.262,0.0041
+ts_optimal_perm,TS + Optimal-Perm ★,0.244,0.2826,0.2576,0.1264,0.2573,0.0777,0.2377,0.0067
+ts_hybrid_rerank,TS + Hybrid-Rerank ★,0.2494,0.288,0.2631,0.1282,0.2578,0.078,0.2567,0.0101

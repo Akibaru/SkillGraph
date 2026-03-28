@@ -1,0 +1,43 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local archives / slides
+*.zip
+*.pptx
+*.ppt
+
+# Keep the paper source private until arXiv release
+Paper/
+
+# LaTeX build artifacts
+Paper/*.aux
+Paper/*.blg
+Paper/*.fdb_latexmk
+Paper/*.fls
+Paper/*.log
+Paper/*.out
+Paper/*.synctex.gz
+Paper/*.toc
+Paper/*.lof
+Paper/*.lot
+Paper/*.nav
+Paper/*.snm
+Paper/*tmp*
+
+# Python / experiment outputs
+skillgraph/outputs/
+skillgraph/models/
+skillgraph/data/raw/
+skillgraph/data/processed/
+skillgraph/conversation.md
+
+# Optional caches
+*.cache

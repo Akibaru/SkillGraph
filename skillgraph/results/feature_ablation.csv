@@ -1,0 +1,5 @@
+method,n,ord_prec,lcs_r,kendall_tau,trans_acc,first_tool_acc
+Full LR,9965,0.157,0.259,0.0963,0.0993,0.2191
+"-Semantic (f1,f2)",9965,0.1539,0.258,0.0901,0.0985,0.1813
+-Graph transitions (f3-f6),9965,0.1494,0.2564,0.081,0.0951,0.2268
+"-Positional priors (f7,f8)",9965,0.1517,0.2565,0.0856,0.095,0.2531

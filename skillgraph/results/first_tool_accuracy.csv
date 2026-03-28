@@ -1,0 +1,9 @@
+method,label,first_tool_acc,ord_prec,set_f1
+semantic_only,Semantic Only,0.262,0.1226,0.2661
+beam,Beam Search,0.206,0.1486,0.2401
+hybrid,Hybrid Sem-Graph,0.262,0.1309,0.272
+ts_sem_semsort,TS-Sem + Sem-Sort,0.262,0.1226,0.2661
+ts_sem_hybrid_rerank,TS-Sem + Hybrid-Rerank,0.256,0.1415,0.2661
+ts_hybrid_semsort,TS-Hybrid + Sem-Sort,0.262,0.134,0.272
+ts_hybrid_optimal_perm,ts_hybrid_optimal_perm,0.2253,0.1515,0.272
+ts_hybrid_hybrid_rerank,TS-Hybrid + Hybrid-Rerank,0.2369,0.154,0.272

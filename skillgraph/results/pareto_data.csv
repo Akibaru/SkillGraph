@@ -1,0 +1,9 @@
+method,label,set_f1,ord_prec,pareto_frontier
+semantic_only,Semantic Only,0.2661,0.1226,False
+beam,Beam Search,0.2401,0.1486,False
+hybrid,Hybrid Sem-Graph,0.272,0.1309,False
+ts_sem_semsort,TS-Sem + Sem-Sort,0.2661,0.1226,False
+ts_sem_hybrid_rerank,TS-Sem + Hybrid-Rerank,0.2661,0.1415,False
+ts_hybrid_semsort,TS-Hybrid + Sem-Sort,0.272,0.134,False
+ts_hybrid_hybrid_rerank,TS-Hybrid + Hybrid-Rerank,0.272,0.154,False
+ts_hybrid_learned_rerank,TS-Hybrid + Learned-Rerank,0.272,0.1565,True

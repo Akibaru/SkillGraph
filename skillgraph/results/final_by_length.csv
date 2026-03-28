@@ -1,0 +1,16 @@
+method,bucket,label,set_precision,set_recall,set_f1,ordered_precision,lcs_r,kendall_tau,transition_acc,first_tool_acc
+semantic_only,1-2,Semantic Only,0.2304,0.3992,0.2872,0.0988,0.3643,0.0441,0.0988,0.3033
+semantic_only,3-4,Semantic Only,0.2389,0.2926,0.2583,0.128,0.2111,0.0397,0.0561,0.242
+semantic_only,5+,Semantic Only,0.2034,0.3006,0.2359,0.1768,0.1744,0.0494,0.0485,0.2334
+beam,1-2,Beam Search,0.22,0.3245,0.2543,0.1317,0.2936,0.0805,0.1317,0.232
+beam,3-4,Beam Search,0.2389,0.2399,0.2346,0.1563,0.178,0.093,0.0852,0.1919
+beam,5+,Beam Search,0.2457,0.2129,0.2214,0.1628,0.129,0.0989,0.0628,0.1974
+hybrid,1-2,Hybrid Sem-Graph,0.229,0.3948,0.285,0.1139,0.3537,0.0462,0.1139,0.3033
+hybrid,3-4,Hybrid Sem-Graph,0.2628,0.2811,0.267,0.1371,0.2008,0.0437,0.0685,0.242
+hybrid,5+,Hybrid Sem-Graph,0.2708,0.2436,0.2489,0.1407,0.1427,0.0393,0.0457,0.2334
+ts_hybrid_hybrid_rerank,1-2,TS-Hybrid + Hybrid-Rerank ★,0.229,0.3948,0.285,0.1335,0.3634,0.0852,0.1335,0.282
+ts_hybrid_hybrid_rerank,3-4,TS-Hybrid + Hybrid-Rerank ★,0.2628,0.2811,0.267,0.1589,0.2096,0.0873,0.0813,0.2327
+ts_hybrid_hybrid_rerank,5+,TS-Hybrid + Hybrid-Rerank ★,0.2708,0.2436,0.2489,0.1767,0.1517,0.1112,0.0582,0.2563
+ts_hybrid_learned_rerank,1-2,TS-Hybrid + Learned-Rerank ★,0.229,0.3948,0.285,0.14,0.3667,0.0983,0.14,0.2655
+ts_hybrid_learned_rerank,3-4,TS-Hybrid + Learned-Rerank ★,0.2628,0.2811,0.267,0.1617,0.2093,0.0928,0.0801,0.2138
+ts_hybrid_learned_rerank,5+,TS-Hybrid + Learned-Rerank ★,0.2708,0.2436,0.2489,0.1752,0.1495,0.1083,0.0572,0.2432

@@ -1,0 +1,101 @@
+method,idx,raw_output,set_f1,ordered_precision,kendall_tau,transition_acc,first_tool_acc,pred_len,gt_len
+llm_zero_shot,0,AddMeeting -> EmailReminder,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,0,QueryMeeting -> EmailReminder,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,1,AddMeeting -> EmailReminder,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,1,QueryMeeting -> EmailReminder,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,2,AddMeeting -> EmailReminder,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,2,QueryMeeting -> EmailReminder,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,3,AddMeeting -> EmailReminder,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,3,QueryMeeting -> EmailReminder,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,4,AddMeeting -> EmailReminder,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,4,QueryMeeting -> EmailReminder,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,5,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,5,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,6,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,6,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,7,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,7,Geocoding -> GetWeatherForCoordinates -> ClothingRecommendation,0.5,0.0,0.0,0.0,0.0,2,2
+llm_zero_shot,8,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,8,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,9,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,9,GetWeatherForCoordinates -> ClothingRecommendation,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,10,AddMeeting -> QueryMeeting -> EmailReminder,0.3333,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,10,AddMeeting -> OrganizationMembers -> QueryMeeting,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,11,AddMeeting -> QueryMeeting -> EmailReminder,0.3333,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,11,AddMeeting -> OrganizationMembers -> QueryMeeting,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,12,AddMeeting -> QueryMeeting -> EmailReminder,0.3333,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,12,OrganizationMembers -> TravelStatus -> AddMeeting,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,13,AddMeeting -> QueryMeeting -> EmailReminder,0.3333,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,13,AddMeeting -> OrganizationMembers -> QueryMeeting,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,14,AddMeeting -> QueryMeeting -> EmailReminder,0.3333,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,14,OrganizationMembers -> TravelStatus -> AddMeeting,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,15,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,15,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,16,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,16,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,17,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,17,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,18,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,18,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,19,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,19,Geocoding -> NearbyRestaurants,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,20,MovieRecommendations -> UserMoviePreferences -> UserWatchedMovies,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_few_shot,20,UserMoviePreferences -> MovieRecommendations -> UserWatchedMovies,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_zero_shot,21,MovieRecommendations -> UserMoviePreferences -> UserWatchedMovies,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_few_shot,21,UserMoviePreferences -> UserWatchedMovies -> MovieRecommendations,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,22,MovieRecommendations -> UserMoviePreferences -> UserWatchedMovies,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_few_shot,22,UserMoviePreferences -> MovieRecommendations -> UserWatchedMovies,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_zero_shot,23,MovieRecommendations -> UserMoviePreferences -> UserWatchedMovies,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_few_shot,23,MovieRecommendations -> UserWatchedMovies,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_zero_shot,24,MovieRecommendations -> UserMoviePreferences -> UserWatchedMovies,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_few_shot,24,UserMoviePreferences -> UserWatchedMovies -> MovieRecommendations,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,25,AccountInfo -> LikeCount -> Calculator,0.6667,1.0,1.0,0.5,0.0,3,3
+llm_few_shot,25,LikeCount -> UserPosts -> AccountInfo,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,26,AccountInfo -> LikeCount -> Calculator,0.6667,1.0,1.0,0.5,0.0,3,3
+llm_few_shot,26,UserPosts -> LikeCount,0.8,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,27,AccountInfo -> LikeCount -> Calculator,0.6667,1.0,1.0,0.5,0.0,3,3
+llm_few_shot,27,LikeCount -> UserPosts -> LikeCount,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_zero_shot,28,AccountInfo -> LikeCount,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,28,UserPosts -> LikeCount,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,29,AccountInfo -> LikeCount -> Calculator,0.6667,1.0,1.0,0.5,0.0,3,3
+llm_few_shot,29,LikeCount -> UserPosts -> AccountInfo,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,30,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,30,GetWeatherForCoordinates -> Geocoding,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,31,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,31,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,32,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,32,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,33,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,33,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,34,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,34,Geocoding -> GetWeatherForCoordinates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,35,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,35,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,36,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,36,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,37,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,37,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,38,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,38,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,39,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,39,FlightSearch -> HotelAvailability,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,40,AccountInfo -> TaxCalculator,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,40,GetOccupationSalary -> TaxCalculator,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,41,AccountInfo -> TaxCalculator,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,41,GetOccupationSalary -> TaxCalculator,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,42,Calculator -> GetOccupationSalary -> TaxCalculator,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,42,TaxCalculator -> GetOccupationSalary,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,43,AccountInfo -> TaxCalculator,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,43,GetOccupationSalary -> TaxCalculator,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,44,AccountInfo -> TaxCalculator,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,44,TaxCalculator -> GetOccupationSalary,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,45,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,45,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,46,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,46,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,47,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,47,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,48,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,48,PersonalInfoUpdate -> AccountInfo,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,49,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,49,AccountInfo -> PersonalInfoUpdate,1.0,1.0,1.0,1.0,1.0,2,2

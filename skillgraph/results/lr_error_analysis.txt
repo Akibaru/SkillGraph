@@ -1,0 +1,220 @@
+==============================================================================
+  Error Analysis: TS-Hybrid + LR  vs  TS-Hybrid + Sem-Sort
+  Metric: per-sample delta in Ordered Precision  (LR - SemSort)
+==============================================================================
+  LR better (delta > 0): 515 samples  (5.2%)  mean_delta=0.8265
+  LR worse  (delta < 0): 243 samples  (2.4%)  mean_delta=-0.8326
+  Equal     (delta = 0): 9,207 samples  (92.4%)
+  Overall mean delta    : +0.0224
+
+==============================================================================
+  SECTION A: LR HELPS  (top 10 samples)
+==============================================================================
+
+[Sample 1]  idx=8781  delta_OrdPrec=+1.0000
+  Query : I'm a financial analyst and I'm interested in analyzing the technical data for Tesla stocks. Can you
+  GT    : t_analysis_from_symbol_for_tradingview_ta_api_technical_analysis -> get_intervals_for_tradingview_ta_api_technical_analysis -> t_analysis_from_symbol_for_tradingview_ta_api_technical_analysis -> now_for_date_calculator
+  SemSort: t_analysis_from_symbol_for_tradingview_ta_api_technical_analysis -> get_24_hours_tickers_for_quantaex_market_data -> get_intervals_for_tradingview_ta_api_technical_analysis
+  LR     : get_24_hours_tickers_for_quantaex_market_data -> get_intervals_for_tradingview_ta_api_technical_analysis -> t_analysis_from_symbol_for_tradingview_ta_api_technical_analysis
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='t_analysis_from_symbol_for_tradingview_ta_api_technical_analysis' [IN GT]  ->  LR='get_24_hours_tickers_for_quantaex_market_data' [not GT]
+    pos 1: SemSort='get_24_hours_tickers_for_quantaex_market_data' [not GT]  ->  LR='get_intervals_for_tradingview_ta_api_technical_analysis' [IN GT]
+    pos 2: SemSort='get_intervals_for_tradingview_ta_api_technical_analysis' [IN GT]  ->  LR='t_analysis_from_symbol_for_tradingview_ta_api_technical_analysis' [IN GT]
+
+
+[Sample 2]  idx=7321  delta_OrdPrec=+1.0000
+  Query : I'm organizing a family reunion in Paris and would like to generate sample user profiles for the att
+  GT    : get_locales_list_for_mocking_rock -> get_sample_userprofile_for_mocking_rock -> get_geo_location_of_ip_address_for_mocking_rock
+  SemSort: get_sample_userprofile_for_mocking_rock -> advance_profile_for_instagram_pro -> get_locales_list_for_mocking_rock
+  LR     : get_locales_list_for_mocking_rock -> get_sample_userprofile_for_mocking_rock -> advance_profile_for_instagram_pro
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='get_sample_userprofile_for_mocking_rock' [IN GT]  ->  LR='get_locales_list_for_mocking_rock' [IN GT]
+    pos 1: SemSort='advance_profile_for_instagram_pro' [not GT]  ->  LR='get_sample_userprofile_for_mocking_rock' [IN GT]
+    pos 2: SemSort='get_locales_list_for_mocking_rock' [IN GT]  ->  LR='advance_profile_for_instagram_pro' [not GT]
+
+
+[Sample 3]  idx=5558  delta_OrdPrec=+1.0000
+  Query : I recently started using Suggestic for meal planning, but I accidentally created multiple user profi
+  GT    : create_user_for_suggestic -> remove_a_meal_plan_for_suggestic -> get_by_filter_for_cancer_rates_by_usa_state -> get_all_fastingcenters_for_fastingcenters
+  SemSort: remove_a_meal_plan_for_suggestic -> create_user_for_suggestic -> v1_randomuser_for_random_user_by_api_ninjas
+  LR     : create_user_for_suggestic -> remove_a_meal_plan_for_suggestic -> v1_randomuser_for_random_user_by_api_ninjas
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='remove_a_meal_plan_for_suggestic' [IN GT]  ->  LR='create_user_for_suggestic' [IN GT]
+    pos 1: SemSort='create_user_for_suggestic' [IN GT]  ->  LR='remove_a_meal_plan_for_suggestic' [IN GT]
+
+
+[Sample 4]  idx=8177  delta_OrdPrec=+1.0000
+  Query : Can you please provide me with a fortune from the 'Social' category? Additionally, I would like to k
+  GT    : category_list_for_fortune_cookie -> my_fortune_for_fortune_cookie
+  SemSort: my_fortune_for_fortune_cookie -> category_list_for_fortune_cookie -> super_lotto_plus_for_ca_lottery
+  LR     : category_list_for_fortune_cookie -> super_lotto_plus_for_ca_lottery -> my_fortune_for_fortune_cookie
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='my_fortune_for_fortune_cookie' [IN GT]  ->  LR='category_list_for_fortune_cookie' [IN GT]
+    pos 1: SemSort='category_list_for_fortune_cookie' [IN GT]  ->  LR='super_lotto_plus_for_ca_lottery' [not GT]
+    pos 2: SemSort='super_lotto_plus_for_ca_lottery' [not GT]  ->  LR='my_fortune_for_fortune_cookie' [IN GT]
+
+
+[Sample 5]  idx=9195  delta_OrdPrec=+1.0000
+  Query : My friends and I are organizing a wrestling fan club and we want to stay updated with the latest wre
+  GT    : wrestling_api_home_for_wrestling_api -> wrestling_news_for_wrestling_api -> get_specific_insult_for_the_dozen_the_yo_mamsa_roast_api -> _jokes_in_a_single_category_for_the_dozen_the_yo_mamsa_roast_api
+  SemSort: wrestling_news_for_wrestling_api -> by_category_for_moka_news -> wrestling_api_home_for_wrestling_api
+  LR     : wrestling_api_home_for_wrestling_api -> wrestling_news_for_wrestling_api -> by_category_for_moka_news
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='wrestling_news_for_wrestling_api' [IN GT]  ->  LR='wrestling_api_home_for_wrestling_api' [IN GT]
+    pos 1: SemSort='by_category_for_moka_news' [not GT]  ->  LR='wrestling_news_for_wrestling_api' [IN GT]
+    pos 2: SemSort='wrestling_api_home_for_wrestling_api' [IN GT]  ->  LR='by_category_for_moka_news' [not GT]
+
+
+[Sample 6]  idx=8574  delta_OrdPrec=+1.0000
+  Query : I want to impress my friends with my Wordle skills. Can you provide me with the solution for today's
+  GT    : today_for_wordle_answers_solutions -> all_solutions_for_wordle_answers_solutions
+  SemSort: all_solutions_for_wordle_answers_solutions -> today_s_wordle_for_wordle_today -> today_for_wordle_answers_solutions
+  LR     : today_for_wordle_answers_solutions -> all_solutions_for_wordle_answers_solutions -> today_s_wordle_for_wordle_today
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='all_solutions_for_wordle_answers_solutions' [IN GT]  ->  LR='today_for_wordle_answers_solutions' [IN GT]
+    pos 1: SemSort='today_s_wordle_for_wordle_today' [not GT]  ->  LR='all_solutions_for_wordle_answers_solutions' [IN GT]
+    pos 2: SemSort='today_for_wordle_answers_solutions' [IN GT]  ->  LR='today_s_wordle_for_wordle_today' [not GT]
+
+
+[Sample 7]  idx=9428  delta_OrdPrec=+1.0000
+  Query : I want to explore the treasure hidden within the Bible. Fetch me the treasure of the day and the ver
+  GT    : today_for_uncovered_treasure -> verse_verse_for_uncovered_treasure -> retrieve_drill_details_for_drillster_2_0
+  SemSort: verse_verse_for_uncovered_treasure -> today_for_uncovered_treasure -> search_searchterm_for_uncovered_treasure
+  LR     : today_for_uncovered_treasure -> verse_verse_for_uncovered_treasure -> search_searchterm_for_uncovered_treasure
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='verse_verse_for_uncovered_treasure' [IN GT]  ->  LR='today_for_uncovered_treasure' [IN GT]
+    pos 1: SemSort='today_for_uncovered_treasure' [IN GT]  ->  LR='verse_verse_for_uncovered_treasure' [IN GT]
+
+
+[Sample 8]  idx=5135  delta_OrdPrec=+1.0000
+  Query : I'm conducting research on technology trends and need to gather information about the frequently ask
+  GT    : getcountrycode_for_asktheworld -> getmultiplequestions_for_asktheworld -> getmultiplequestions_for_asktheworld -> getmultiplequestions_for_asktheworld
+  SemSort: getmultiplequestions_for_asktheworld -> getquestions_for_asktheworld -> getcountrycode_for_asktheworld
+  LR     : getcountrycode_for_asktheworld -> getquestions_for_asktheworld -> getmultiplequestions_for_asktheworld
+  Diff  : positions changed = [0, 2]
+    pos 0: SemSort='getmultiplequestions_for_asktheworld' [IN GT]  ->  LR='getcountrycode_for_asktheworld' [IN GT]
+    pos 2: SemSort='getcountrycode_for_asktheworld' [IN GT]  ->  LR='getmultiplequestions_for_asktheworld' [IN GT]
+
+
+[Sample 9]  idx=7876  delta_OrdPrec=+1.0000
+  Query : I want to surprise my family with a live streaming session of the football match tonight. Can you pr
+  GT    : match_embed_link_for_football_live_stream_api -> football_live_for_football_live_stream_api -> football_live_for_football_live_stream_api
+  SemSort: football_live_for_football_live_stream_api -> match_embed_link_for_football_live_stream_api -> get_football_live_scores_today_for_football_score_api
+  LR     : match_embed_link_for_football_live_stream_api -> football_live_for_football_live_stream_api -> get_football_live_scores_today_for_football_score_api
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='football_live_for_football_live_stream_api' [IN GT]  ->  LR='match_embed_link_for_football_live_stream_api' [IN GT]
+    pos 1: SemSort='match_embed_link_for_football_live_stream_api' [IN GT]  ->  LR='football_live_for_football_live_stream_api' [IN GT]
+
+
+[Sample 10]  idx=5130  delta_OrdPrec=+1.0000
+  Query : As an avid collector, I'm interested in exploring the NFTs owned by a famous celebrity. The celebrit
+  GT    : getnfts_byaddress_for_nfts_by_address -> getnfts_byaddress_for_nfts_by_address -> getnfts_metadata_for_nfts_by_address -> getnfts_metadata_for_nfts_by_address
+  SemSort: getnfts_metadata_for_nfts_by_address -> get_nfts_for_felina_multisig_wallet_api -> getnfts_byaddress_for_nfts_by_address
+  LR     : getnfts_byaddress_for_nfts_by_address -> get_nfts_for_felina_multisig_wallet_api -> getnfts_metadata_for_nfts_by_address
+  Diff  : positions changed = [0, 2]
+    pos 0: SemSort='getnfts_metadata_for_nfts_by_address' [IN GT]  ->  LR='getnfts_byaddress_for_nfts_by_address' [IN GT]
+    pos 2: SemSort='getnfts_byaddress_for_nfts_by_address' [IN GT]  ->  LR='getnfts_metadata_for_nfts_by_address' [IN GT]
+
+==============================================================================
+  SECTION B: LR HURTS  (top 10 samples)
+==============================================================================
+
+[Sample 1]  idx=26  delta_OrdPrec=-1.0000
+  Query : I'm planning to invest in The Sandbox - SAND and I need some historical data. Can you fetch me the p
+  GT    : past_1_year_for_the_sandbox_sand -> past_1_year_for_the_sandbox_sand -> past_3_months_for_the_sandbox_sand -> quote_for_the_sandbox_sand
+  SemSort: past_3_years_for_the_sandbox_sand -> past_1_year_for_the_sandbox_sand -> past_3_months_for_the_sandbox_sand
+  LR     : past_3_months_for_the_sandbox_sand -> past_1_year_for_the_sandbox_sand -> past_3_years_for_the_sandbox_sand
+  Diff  : positions changed = [0, 2]
+    pos 0: SemSort='past_3_years_for_the_sandbox_sand' [not GT]  ->  LR='past_3_months_for_the_sandbox_sand' [IN GT]
+    pos 2: SemSort='past_3_months_for_the_sandbox_sand' [IN GT]  ->  LR='past_3_years_for_the_sandbox_sand' [not GT]
+
+
+[Sample 2]  idx=9876  delta_OrdPrec=-1.0000
+  Query : I'm curious about the district capital of Ghana with the ID 2. Can you provide me with its name, dis
+  GT    : get_district_capital_by_id_for_district_capitals_in_ghana -> ip_for_ip_to_country_name -> get_all_district_capital_for_district_capitals_in_ghana
+  SemSort: get_district_capital_by_id_for_district_capitals_in_ghana -> get_district_capital_by_name_for_district_capitals_in_ghana -> get_all_district_capital_for_district_capitals_in_ghana
+  LR     : get_district_capital_by_name_for_district_capitals_in_ghana -> get_all_district_capital_for_district_capitals_in_ghana -> get_district_capital_by_id_for_district_capitals_in_ghana
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='get_district_capital_by_id_for_district_capitals_in_ghana' [IN GT]  ->  LR='get_district_capital_by_name_for_district_capitals_in_ghana' [not GT]
+    pos 1: SemSort='get_district_capital_by_name_for_district_capitals_in_ghana' [not GT]  ->  LR='get_all_district_capital_for_district_capitals_in_ghana' [IN GT]
+    pos 2: SemSort='get_all_district_capital_for_district_capitals_in_ghana' [IN GT]  ->  LR='get_district_capital_by_id_for_district_capitals_in_ghana' [IN GT]
+
+
+[Sample 3]  idx=9811  delta_OrdPrec=-1.0000
+  Query : Tell me the word of the day from cd, the word of the day from pm, and the word of the day from mw. I
+  GT    : word_of_the_day_from_cd_for_word_of_the_day -> word_of_the_day_from_pm_for_word_of_the_day -> word_of_the_day_from_mw_for_word_of_the_day
+  SemSort: word_of_the_day_from_dc_for_word_of_the_day -> word_of_the_day_from_cd_for_word_of_the_day -> word_of_the_day_from_mw_for_word_of_the_day
+  LR     : word_of_the_day_from_dc_for_word_of_the_day -> word_of_the_day_from_mw_for_word_of_the_day -> word_of_the_day_from_cd_for_word_of_the_day
+  Diff  : positions changed = [1, 2]
+    pos 1: SemSort='word_of_the_day_from_cd_for_word_of_the_day' [IN GT]  ->  LR='word_of_the_day_from_mw_for_word_of_the_day' [IN GT]
+    pos 2: SemSort='word_of_the_day_from_mw_for_word_of_the_day' [IN GT]  ->  LR='word_of_the_day_from_cd_for_word_of_the_day' [IN GT]
+
+
+[Sample 4]  idx=9816  delta_OrdPrec=-1.0000
+  Query : I'm feeling down today and need something to cheer me up. Can you provide me with a list of moods av
+  GT    : mood_list_for_text_mood_changer_ai -> oxdetectai_api_for_toxdetectai_ai_powered_toxic_comment_detector
+  SemSort: mood_list_for_text_mood_changer_ai -> oxdetectai_api_for_toxdetectai_ai_powered_toxic_comment_detector -> ctor_api_for_chatgpt_detector_ai_powered_chatgpt_answer_detector
+  LR     : oxdetectai_api_for_toxdetectai_ai_powered_toxic_comment_detector -> mood_list_for_text_mood_changer_ai -> ctor_api_for_chatgpt_detector_ai_powered_chatgpt_answer_detector
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='mood_list_for_text_mood_changer_ai' [IN GT]  ->  LR='oxdetectai_api_for_toxdetectai_ai_powered_toxic_comment_detector' [IN GT]
+    pos 1: SemSort='oxdetectai_api_for_toxdetectai_ai_powered_toxic_comment_detector' [IN GT]  ->  LR='mood_list_for_text_mood_changer_ai' [IN GT]
+
+
+[Sample 5]  idx=9778  delta_OrdPrec=-1.0000
+  Query : My company is interested in energy price trends and we need access to news articles. Can you fetch a
+  GT    : list_of_regions_for_energy_price_news -> articles_by_single_source_for_energy_price_news -> list_of_sources_for_energy_price_news -> sources_by_region_for_energy_price_news
+  SemSort: all_articles_for_energy_price_news -> articles_by_single_source_for_energy_price_news -> list_of_sources_for_energy_price_news
+  LR     : all_articles_for_energy_price_news -> list_of_sources_for_energy_price_news -> articles_by_single_source_for_energy_price_news
+  Diff  : positions changed = [1, 2]
+    pos 1: SemSort='articles_by_single_source_for_energy_price_news' [IN GT]  ->  LR='list_of_sources_for_energy_price_news' [IN GT]
+    pos 2: SemSort='list_of_sources_for_energy_price_news' [IN GT]  ->  LR='articles_by_single_source_for_energy_price_news' [IN GT]
+
+
+[Sample 6]  idx=9701  delta_OrdPrec=-1.0000
+  Query : I want to explore the world population trends over the past few decades. Please provide me with the 
+  GT    : get_by_decade_for_world_population_by_decade_and_growth_rate -> get_by_filter_for_world_population_by_decade_and_growth_rate
+  SemSort: get_by_decade_for_world_population_by_decade_and_growth_rate -> get_by_filter_for_world_population_by_decade_and_growth_rate -> get_population_for_get_population
+  LR     : get_by_filter_for_world_population_by_decade_and_growth_rate -> get_by_decade_for_world_population_by_decade_and_growth_rate -> get_population_for_get_population
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='get_by_decade_for_world_population_by_decade_and_growth_rate' [IN GT]  ->  LR='get_by_filter_for_world_population_by_decade_and_growth_rate' [IN GT]
+    pos 1: SemSort='get_by_filter_for_world_population_by_decade_and_growth_rate' [IN GT]  ->  LR='get_by_decade_for_world_population_by_decade_and_growth_rate' [IN GT]
+
+
+[Sample 7]  idx=9685  delta_OrdPrec=-1.0000
+  Query : I am studying ancient mythology and need detailed information about Roman gods. Can you provide a ra
+  GT    : random_roman_god_for_roman_gods_by_pizza_api -> search_roman_god_by_name_for_roman_gods_by_pizza_api -> search_roman_god_by_name_for_roman_gods_by_pizza_api -> random_roman_god_for_roman_gods_by_pizza_api
+  SemSort: search_roman_god_by_name_for_roman_gods_by_pizza_api -> random_roman_god_for_roman_gods_by_pizza_api -> getbyhex_for_aircraft_data_simple_collection
+  LR     : random_roman_god_for_roman_gods_by_pizza_api -> search_roman_god_by_name_for_roman_gods_by_pizza_api -> getbyhex_for_aircraft_data_simple_collection
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='search_roman_god_by_name_for_roman_gods_by_pizza_api' [IN GT]  ->  LR='random_roman_god_for_roman_gods_by_pizza_api' [IN GT]
+    pos 1: SemSort='random_roman_god_for_roman_gods_by_pizza_api' [IN GT]  ->  LR='search_roman_god_by_name_for_roman_gods_by_pizza_api' [IN GT]
+
+
+[Sample 8]  idx=9650  delta_OrdPrec=-1.0000
+  Query : I'm planning to buy a smartwatch for myself. Can you help me find the perfect one on Gearbest? Provi
+  GT    : get_product_for_gearbest -> get_products_from_category_for_gearbest -> companies_for_kargom_nerede
+  SemSort: get_shipping_for_gearbest -> get_product_for_gearbest -> get_products_from_category_for_gearbest
+  LR     : get_shipping_for_gearbest -> get_products_from_category_for_gearbest -> get_product_for_gearbest
+  Diff  : positions changed = [1, 2]
+    pos 1: SemSort='get_product_for_gearbest' [IN GT]  ->  LR='get_products_from_category_for_gearbest' [IN GT]
+    pos 2: SemSort='get_products_from_category_for_gearbest' [IN GT]  ->  LR='get_product_for_gearbest' [IN GT]
+
+
+[Sample 9]  idx=9526  delta_OrdPrec=-1.0000
+  Query : I want to track the performance of a stock over time and visualize its price movements. Please provi
+  GT    : get_4_charts_for_stockyapiexchange -> get_3_summary_for_stockyapiexchange -> get_3_summary_for_stockyapiexchange -> get_3_summary_for_stockyapiexchange -> get_3_summary_for_stockyapiexchange
+  SemSort: get_4_charts_for_stockyapiexchange -> get_3_summary_for_stockyapiexchange -> get_6_daily_for_stockyapiexchange
+  LR     : get_3_summary_for_stockyapiexchange -> get_4_charts_for_stockyapiexchange -> get_6_daily_for_stockyapiexchange
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='get_4_charts_for_stockyapiexchange' [IN GT]  ->  LR='get_3_summary_for_stockyapiexchange' [IN GT]
+    pos 1: SemSort='get_3_summary_for_stockyapiexchange' [IN GT]  ->  LR='get_4_charts_for_stockyapiexchange' [IN GT]
+
+
+[Sample 10]  idx=9527  delta_OrdPrec=-1.0000
+  Query : I'm organizing a local event for the upcoming election and I need to stay updated with the latest ne
+  GT    : getevents_for_election2020_smartable -> getfutureeventsbytopic_for_election2020_smartable -> getfaqs_for_election2020_smartable -> gettopics_for_election2020_smartable
+  SemSort: getevents_for_election2020_smartable -> gettopics_for_election2020_smartable -> get_all_climate_change_news_for_climate_change_live_v3
+  LR     : get_all_climate_change_news_for_climate_change_live_v3 -> gettopics_for_election2020_smartable -> getevents_for_election2020_smartable
+  Diff  : positions changed = [0, 2]
+    pos 0: SemSort='getevents_for_election2020_smartable' [IN GT]  ->  LR='get_all_climate_change_news_for_climate_change_live_v3' [not GT]
+    pos 2: SemSort='get_all_climate_change_news_for_climate_change_live_v3' [not GT]  ->  LR='getevents_for_election2020_smartable' [IN GT]

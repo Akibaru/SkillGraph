@@ -1,0 +1,13 @@
+method,bucket,set_f1,ordered_precision,kendall_tau
+bm25,medium(3+),0.4286,0.0,-0.2857
+bm25,short(2),0.6528,0.1389,-0.0278
+hybrid,medium(3+),0.6905,0.3333,0.0238
+hybrid,short(2),0.8472,0.1389,-0.4167
+semantic,medium(3+),0.619,0.119,-0.4048
+semantic,short(2),0.8611,0.1389,-0.4444
+ts_hr,medium(3+),0.6905,0.2619,-0.119
+ts_hr,short(2),0.8472,0.1389,-0.4167
+ts_lr,medium(3+),0.6905,0.5238,0.4048
+ts_lr,short(2),0.8472,0.6944,0.6944
+ts_semsort,medium(3+),0.6905,0.3333,0.0238
+ts_semsort,short(2),0.8472,0.1389,-0.4167

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "SkillGraph"
+message: "If you use this repository, please cite it using the metadata below. A paper citation will be added after the arXiv release."
+type: software
+authors:
+  - family-names: Liu
+    given-names: Hao
+    orcid: "https://orcid.org/0009-0004-7614-9597"
+  - family-names: Hu
+    given-names: Qinglei
+    orcid: "https://orcid.org/0000-0002-5563-310X"
+  - family-names: Li
+    given-names: Dongyu
+    orcid: "https://orcid.org/0000-0001-8338-0536"
+repository-code: "https://github.com/Akibaru/SkillGraph"
+url: "https://github.com/Akibaru/SkillGraph"
+license: "NOASSERTION"
+keywords:
+  - llm agents
+  - tool recommendation
+  - graph foundation prior
+  - tool sequencing
+  - retrieval

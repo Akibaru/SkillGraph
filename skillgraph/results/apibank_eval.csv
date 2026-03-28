@@ -1,0 +1,7 @@
+,set_f1,set_prec,set_rec,lcs_r,ordered_precision,transition_acc,first_tool_acc,kendall_tau
+TS-Hybrid + LR (zero-shot),0.8033,0.8033,0.8033,0.77,0.6467,0.62,0.66,0.6133
+Hybrid Sem-Graph,0.8033,0.8033,0.8033,0.55,0.1933,0.19,0.1,-0.2933
+TS-Hybrid + SemSort,0.8033,0.8033,0.8033,0.55,0.1933,0.19,0.1,-0.2933
+TS-Hybrid + HybridRerank,0.8033,0.8033,0.8033,0.55,0.1733,0.19,0.1,-0.3333
+Semantic Only,0.7933,0.7933,0.7933,0.5233,0.1333,0.15,0.1,-0.4333
+BM25,0.59,0.59,0.59,0.5033,0.1,0.1,0.2,-0.1

@@ -1,0 +1,25 @@
+method,bucket,label,set_precision,set_recall,set_f1,ordered_precision,lcs_r,kendall_tau,transition_acc
+semantic_only,1-2,Semantic Only (BL),0.2304,0.3992,0.2872,0.0988,0.3643,0.0441,0.0988
+semantic_only,3-4,Semantic Only (BL),0.2389,0.2926,0.2583,0.128,0.2111,0.0397,0.0561
+semantic_only,5+,Semantic Only (BL),0.2034,0.3006,0.2359,0.1768,0.1744,0.0494,0.0485
+beam,1-2,Beam Search,0.22,0.3245,0.2543,0.1317,0.2936,0.0805,0.1317
+beam,3-4,Beam Search,0.2389,0.2399,0.2346,0.1563,0.178,0.093,0.0852
+beam,5+,Beam Search,0.2457,0.2129,0.2214,0.1628,0.129,0.0989,0.0628
+hybrid,1-2,Hybrid Sem-Graph,0.229,0.3948,0.285,0.1139,0.354,0.0468,0.1139
+hybrid,3-4,Hybrid Sem-Graph,0.2638,0.282,0.2678,0.1378,0.2014,0.0439,0.0687
+hybrid,5+,Hybrid Sem-Graph,0.2704,0.2433,0.2486,0.1414,0.1427,0.0407,0.0465
+ts_matched_sem_sort,1-2,TS-Matched + Sem-Sort,0.2304,0.3992,0.2872,0.0988,0.3643,0.0441,0.0988
+ts_matched_sem_sort,3-4,TS-Matched + Sem-Sort,0.2389,0.2926,0.2583,0.128,0.2111,0.0397,0.0561
+ts_matched_sem_sort,5+,TS-Matched + Sem-Sort,0.2034,0.3006,0.2359,0.1768,0.1744,0.0494,0.0485
+ts_matched_greedy_graph,1-2,TS-Matched + Greedy-Graph,0.2304,0.3992,0.2872,0.0983,0.364,0.0429,0.0983
+ts_matched_greedy_graph,3-4,TS-Matched + Greedy-Graph,0.2389,0.2926,0.2583,0.1249,0.2108,0.0336,0.0584
+ts_matched_greedy_graph,5+,TS-Matched + Greedy-Graph,0.2034,0.3006,0.2359,0.1756,0.1751,0.047,0.0555
+ts_matched_greedy_gnn,1-2,TS-Matched + Greedy-GNN,0.2304,0.3992,0.2872,0.0962,0.363,0.0388,0.0962
+ts_matched_greedy_gnn,3-4,TS-Matched + Greedy-GNN,0.2389,0.2926,0.2583,0.1245,0.2097,0.0328,0.0554
+ts_matched_greedy_gnn,5+,TS-Matched + Greedy-GNN,0.2034,0.3006,0.2359,0.1773,0.1747,0.0503,0.0503
+ts_matched_optimal_perm,1-2,TS-Matched + Optimal-Perm,0.2304,0.3992,0.2872,0.1131,0.3714,0.0725,0.1131
+ts_matched_optimal_perm,3-4,TS-Matched + Optimal-Perm,0.2389,0.2926,0.2583,0.1437,0.218,0.0712,0.0693
+ts_matched_optimal_perm,5+,TS-Matched + Optimal-Perm,0.2034,0.3006,0.2359,0.2077,0.183,0.1111,0.0692
+ts_matched_hybrid_rerank,1-2,TS-Matched + Hybrid-Rerank,0.2304,0.3992,0.2872,0.1131,0.3714,0.0725,0.1131
+ts_matched_hybrid_rerank,3-4,TS-Matched + Hybrid-Rerank,0.2389,0.2926,0.2583,0.1464,0.2187,0.0766,0.0695
+ts_matched_hybrid_rerank,5+,TS-Matched + Hybrid-Rerank,0.2034,0.3006,0.2359,0.216,0.1845,0.1277,0.0691

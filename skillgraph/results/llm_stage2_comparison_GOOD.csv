@@ -1,0 +1,5 @@
+,set_f1,lcs_r,ordered_precision,kendall_tau,transition_acc,first_tool_acc
+TS-Hybrid + LR (ours),0.2543,0.2347,0.14,0.0967,0.0842,0.2567
+TS-Hybrid + HR,0.2543,0.2338,0.1322,0.0811,0.0819,0.26
+TS-Hybrid + LLaMA3.1-8B (0-shot),0.2544,0.2312,0.1156,0.0478,0.0833,0.2367
+TS-Hybrid + LLaMA3.1-8B (3-shot),0.2571,0.2258,0.11,0.0433,0.0714,0.2767

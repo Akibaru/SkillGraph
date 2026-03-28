@@ -1,0 +1,218 @@
+==============================================================================
+  Error Analysis: TS-Hybrid + Hybrid-Rerank vs TS-Hybrid + Sem-Sort
+  Metric: per-sample delta in Ordered Precision  (HR - SemSort)
+==============================================================================
+  HR better (delta > 0): 566 samples  mean_delta=0.8545
+  HR worse  (delta < 0): 323 samples  mean_delta=-0.8813
+  Equal     (delta = 0): 9,076 samples
+  Overall mean delta    : +0.0200
+
+==============================================================================
+  SECTION A: HR HELPS  (HR Ord.Prec > SemSort Ord.Prec, top 10 samples)
+==============================================================================
+
+[Sample 1]  idx=6530  delta_OrdPrec=+1.0000
+  Query : I need the details of the handball tournament with ID 149. Also, give me the seasons of this tournam
+  GT    : leaguedetails_for_handballapi -> leagueseasons_for_handballapi
+  SemSort: leagueseasons_for_handballapi -> leaguedetails_for_handballapi -> leaguerounds_for_handballapi
+  HR     : leaguedetails_for_handballapi -> leagueseasons_for_handballapi -> leaguerounds_for_handballapi
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='leagueseasons_for_handballapi' [IN GT]  ->  HR='leaguedetails_for_handballapi' [IN GT]
+    pos 1: SemSort='leaguedetails_for_handballapi' [IN GT]  ->  HR='leagueseasons_for_handballapi' [IN GT]
+
+
+[Sample 2]  idx=6453  delta_OrdPrec=+1.0000
+  Query : Retrieve the top 10 players by total points in the 2011 season and the top 5 players by assists in t
+  GT    : topscorersbyseasontotalpoints_for_nba_statistics_api -> topassistsbyseasontotalassists_for_nba_statistics_api -> passistsintheplayoffsbyseasontotalassists_for_nba_statistics_api
+  SemSort: passistsintheplayoffsbyseasontotalassists_for_nba_statistics_api -> topassistsbyseasontotalassists_for_nba_statistics_api -> opscorersintheplayoffsbyseasontotalpoints_for_nba_statistics_api
+  HR     : topassistsbyseasontotalassists_for_nba_statistics_api -> opscorersintheplayoffsbyseasontotalpoints_for_nba_statistics_api -> passistsintheplayoffsbyseasontotalassists_for_nba_statistics_api
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='passistsintheplayoffsbyseasontotalassists_for_nba_statistics_api' [IN GT]  ->  HR='topassistsbyseasontotalassists_for_nba_statistics_api' [IN GT]
+    pos 1: SemSort='topassistsbyseasontotalassists_for_nba_statistics_api' [IN GT]  ->  HR='opscorersintheplayoffsbyseasontotalpoints_for_nba_statistics_api' [not GT]
+    pos 2: SemSort='opscorersintheplayoffsbyseasontotalpoints_for_nba_statistics_api' [not GT]  ->  HR='passistsintheplayoffsbyseasontotalassists_for_nba_statistics_api' [IN GT]
+
+
+[Sample 3]  idx=5447  delta_OrdPrec=+1.0000
+  Query : I want to know the matches and odds available on Betway. Can you provide me with the details? It wou
+  GT    : matches_for_betway -> odds_for_betway
+  SemSort: odds_for_betway -> matches_for_betway -> bet365_upcoming_events_for_betsapi
+  HR     : matches_for_betway -> odds_for_betway -> bet365_upcoming_events_for_betsapi
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='odds_for_betway' [IN GT]  ->  HR='matches_for_betway' [IN GT]
+    pos 1: SemSort='matches_for_betway' [IN GT]  ->  HR='odds_for_betway' [IN GT]
+
+
+[Sample 4]  idx=7225  delta_OrdPrec=+1.0000
+  Query : I want to surprise my friends with a playlist of indie songs. Can you recommend some indie songs for
+  GT    : get_top_50_indie_songs_for_indie_songs_distrokid_unsigned -> search_indie_songs_by_filters_for_indie_songs_distrokid_unsigned -> get_top_50_indie_songs_for_indie_songs_distrokid_unsigned -> random_song_out_of_artist_for_halsey_lyric_snippets
+  SemSort: get_top_50_indie_songs_for_indie_songs_distrokid_unsigned -> search_indie_songs_by_filters_for_indie_songs_distrokid_unsigned -> get_csv_of_top_50_indie_songs_for_indie_songs_distrokid_unsigned
+  HR     : search_indie_songs_by_filters_for_indie_songs_distrokid_unsigned -> get_top_50_indie_songs_for_indie_songs_distrokid_unsigned -> get_csv_of_top_50_indie_songs_for_indie_songs_distrokid_unsigned
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='get_top_50_indie_songs_for_indie_songs_distrokid_unsigned' [IN GT]  ->  HR='search_indie_songs_by_filters_for_indie_songs_distrokid_unsigned' [IN GT]
+    pos 1: SemSort='search_indie_songs_by_filters_for_indie_songs_distrokid_unsigned' [IN GT]  ->  HR='get_top_50_indie_songs_for_indie_songs_distrokid_unsigned' [IN GT]
+
+
+[Sample 5]  idx=1991  delta_OrdPrec=+1.0000
+  Query : I am planning a healthcare research project in Nouvelle-Calédonie and need to ensure that the Pharma
+  GT    : health_for_pharmacies_de_garde_nc -> all_for_pharmacies_de_garde_nc
+  SemSort: all_for_pharmacies_de_garde_nc -> health_for_pharmacies_de_garde_nc -> health_for_partenaires_mobilis
+  HR     : health_for_pharmacies_de_garde_nc -> all_for_pharmacies_de_garde_nc -> health_for_partenaires_mobilis
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='all_for_pharmacies_de_garde_nc' [IN GT]  ->  HR='health_for_pharmacies_de_garde_nc' [IN GT]
+    pos 1: SemSort='health_for_pharmacies_de_garde_nc' [IN GT]  ->  HR='all_for_pharmacies_de_garde_nc' [IN GT]
+
+
+[Sample 6]  idx=7485  delta_OrdPrec=+1.0000
+  Query : I need a list of regions in Asia and their respective subregions. Also, provide the time zones for t
+  GT    : get_regions_for_world_country -> get_sub_regions_for_world_country -> get_sub_regions_for_world_country -> get_time_zones_for_world_country
+  SemSort: get_sub_regions_for_world_country -> get_regions_for_world_country -> region_list_for_lotto_draw_results_global
+  HR     : get_regions_for_world_country -> get_sub_regions_for_world_country -> region_list_for_lotto_draw_results_global
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='get_sub_regions_for_world_country' [IN GT]  ->  HR='get_regions_for_world_country' [IN GT]
+    pos 1: SemSort='get_regions_for_world_country' [IN GT]  ->  HR='get_sub_regions_for_world_country' [IN GT]
+
+
+[Sample 7]  idx=6864  delta_OrdPrec=+1.0000
+  Query : I'm planning a family movie night. Can you find some Instagram posts and reels related to family mov
+  GT    : posts_for_instagram_reels_and_post_downloader -> posts_for_instagram_reels_and_post_downloader -> reels_downloader_for_instagram_reels_and_post_downloader -> create_qr_code_for_easy_qr_code_generator -> create_qr_code_for_easy_qr_code_generator
+  SemSort: reels_downloader_for_instagram_reels_and_post_downloader -> posts_for_instagram_reels_and_post_downloader -> url_for_instagram_downloader_download_videos_reels_stories_2023
+  HR     : posts_for_instagram_reels_and_post_downloader -> reels_downloader_for_instagram_reels_and_post_downloader -> url_for_instagram_downloader_download_videos_reels_stories_2023
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='reels_downloader_for_instagram_reels_and_post_downloader' [IN GT]  ->  HR='posts_for_instagram_reels_and_post_downloader' [IN GT]
+    pos 1: SemSort='posts_for_instagram_reels_and_post_downloader' [IN GT]  ->  HR='reels_downloader_for_instagram_reels_and_post_downloader' [IN GT]
+
+
+[Sample 8]  idx=6009  delta_OrdPrec=+1.0000
+  Query : I need to retrieve the message from the end_copy API of the frrefe tool. Additionally, I require the
+  GT    : end_copy_for_frrefe -> https_www_tiktok_com_88bur_for_frrefe -> end_for_frrefe
+  SemSort: https_www_tiktok_com_88bur_for_frrefe -> end_copy_for_frrefe -> api_analyze_for_tiktok_private_api
+  HR     : end_copy_for_frrefe -> https_www_tiktok_com_88bur_for_frrefe -> api_analyze_for_tiktok_private_api
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='https_www_tiktok_com_88bur_for_frrefe' [IN GT]  ->  HR='end_copy_for_frrefe' [IN GT]
+    pos 1: SemSort='end_copy_for_frrefe' [IN GT]  ->  HR='https_www_tiktok_com_88bur_for_frrefe' [IN GT]
+
+
+[Sample 9]  idx=8266  delta_OrdPrec=+1.0000
+  Query : My company is in the business of buying and selling precious metals. Can you give me the latest rate
+  GT    : latest_rates_for_metals_prices_rates_api -> historical_rates_for_metals_prices_rates_api -> open_high_low_close_ohlc_price_for_metals_prices_rates_api -> carat_for_metals_prices_rates_api
+  SemSort: carat_for_metals_prices_rates_api -> historical_rates_for_metals_prices_rates_api -> latest_rates_for_metals_prices_rates_api
+  HR     : latest_rates_for_metals_prices_rates_api -> historical_rates_for_metals_prices_rates_api -> carat_for_metals_prices_rates_api
+  Diff  : positions changed = [0, 2]
+    pos 0: SemSort='carat_for_metals_prices_rates_api' [IN GT]  ->  HR='latest_rates_for_metals_prices_rates_api' [IN GT]
+    pos 2: SemSort='latest_rates_for_metals_prices_rates_api' [IN GT]  ->  HR='carat_for_metals_prices_rates_api' [IN GT]
+
+
+[Sample 10]  idx=6796  delta_OrdPrec=+1.0000
+  Query : I'm organizing a meme competition for my friends. Can you give me a list of the top memes from the '
+  GT    : list_of_memes_for_memes -> random_meme_for_memes
+  SemSort: random_meme_for_memes -> list_of_memes_for_memes -> get_all_memes_for_programming_memes_reddit
+  HR     : list_of_memes_for_memes -> random_meme_for_memes -> get_all_memes_for_programming_memes_reddit
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='random_meme_for_memes' [IN GT]  ->  HR='list_of_memes_for_memes' [IN GT]
+    pos 1: SemSort='list_of_memes_for_memes' [IN GT]  ->  HR='random_meme_for_memes' [IN GT]
+
+==============================================================================
+  SECTION B: HR HURTS  (HR Ord.Prec < SemSort Ord.Prec, top 10 samples)
+==============================================================================
+
+[Sample 1]  idx=8690  delta_OrdPrec=-1.0000
+  Query : My company is interested in monitoring social media sentiment for trending stocks. Could you give me
+  GT    : tamps_1d_for_finance_social_sentiment_for_twitter_and_stocktwits -> comments_for_finance_social_sentiment_for_twitter_and_stocktwits -> ng_posts_for_finance_social_sentiment_for_twitter_and_stocktwits
+  SemSort: comments_for_finance_social_sentiment_for_twitter_and_stocktwits -> ng_posts_for_finance_social_sentiment_for_twitter_and_stocktwits -> luencers_for_finance_social_sentiment_for_twitter_and_stocktwits
+  HR     : ng_posts_for_finance_social_sentiment_for_twitter_and_stocktwits -> comments_for_finance_social_sentiment_for_twitter_and_stocktwits -> luencers_for_finance_social_sentiment_for_twitter_and_stocktwits
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='comments_for_finance_social_sentiment_for_twitter_and_stocktwits' [IN GT]  ->  HR='ng_posts_for_finance_social_sentiment_for_twitter_and_stocktwits' [IN GT]
+    pos 1: SemSort='ng_posts_for_finance_social_sentiment_for_twitter_and_stocktwits' [IN GT]  ->  HR='comments_for_finance_social_sentiment_for_twitter_and_stocktwits' [IN GT]
+
+
+[Sample 2]  idx=8494  delta_OrdPrec=-1.0000
+  Query : I am organizing a company event in Nouvelle Calédonie. Can you give me the list of provinces in the 
+  GT    : all_for_bps -> all_codes_postaux_for_bps -> bp_par_localite_for_bps
+  SemSort: all_for_bps -> wilaya_informations_for_get_58_provinces_of_algeria -> bp_par_localite_for_bps
+  HR     : bp_par_localite_for_bps -> all_for_bps -> wilaya_informations_for_get_58_provinces_of_algeria
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='all_for_bps' [IN GT]  ->  HR='bp_par_localite_for_bps' [IN GT]
+    pos 1: SemSort='wilaya_informations_for_get_58_provinces_of_algeria' [not GT]  ->  HR='all_for_bps' [IN GT]
+    pos 2: SemSort='bp_par_localite_for_bps' [IN GT]  ->  HR='wilaya_informations_for_get_58_provinces_of_algeria' [not GT]
+
+
+[Sample 3]  idx=8476  delta_OrdPrec=-1.0000
+  Query : I'm organizing a charity event for my community and I want to promote it on social media. Can you su
+  GT    : get_hashtags_for_top_instagram_hashtag -> get_new_hashtags_for_top_instagram_hashtag -> go_for_youtube
+  SemSort: get_hashtags_for_top_instagram_hashtag -> get_new_hashtags_for_top_instagram_hashtag -> hashtag_info_for_get_100_success_instagram_api_scalable_robust
+  HR     : get_new_hashtags_for_top_instagram_hashtag -> get_hashtags_for_top_instagram_hashtag -> hashtag_info_for_get_100_success_instagram_api_scalable_robust
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='get_hashtags_for_top_instagram_hashtag' [IN GT]  ->  HR='get_new_hashtags_for_top_instagram_hashtag' [IN GT]
+    pos 1: SemSort='get_new_hashtags_for_top_instagram_hashtag' [IN GT]  ->  HR='get_hashtags_for_top_instagram_hashtag' [IN GT]
+
+
+[Sample 4]  idx=8453  delta_OrdPrec=-1.0000
+  Query : I'm a blogger and I'm looking for typography inspiration for my new website. Can you recommend some 
+  GT    : font_for_typography -> type_for_typography -> random_for_typography -> random_for_typography
+  SemSort: fonts_for_meme_generator_and_template_database -> font_for_typography -> random_for_typography
+  HR     : fonts_for_meme_generator_and_template_database -> random_for_typography -> font_for_typography
+  Diff  : positions changed = [1, 2]
+    pos 1: SemSort='font_for_typography' [IN GT]  ->  HR='random_for_typography' [IN GT]
+    pos 2: SemSort='random_for_typography' [IN GT]  ->  HR='font_for_typography' [IN GT]
+
+
+[Sample 5]  idx=36  delta_OrdPrec=-1.0000
+  Query : I'm planning a surprise birthday party for my best friend and I need some ideas to make it memorable
+  GT    : get_recent_f1_news_from_all_sources_for_f1_latest_news -> race_detail_info_for_greyhound_racing_uk -> racecards_for_greyhound_racing_uk -> premium_history_for_betigolo_tips
+  SemSort: race_detail_info_for_greyhound_racing_uk -> racecards_for_greyhound_racing_uk -> results_for_greyhound_racing_uk
+  HR     : racecards_for_greyhound_racing_uk -> results_for_greyhound_racing_uk -> race_detail_info_for_greyhound_racing_uk
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='race_detail_info_for_greyhound_racing_uk' [IN GT]  ->  HR='racecards_for_greyhound_racing_uk' [IN GT]
+    pos 1: SemSort='racecards_for_greyhound_racing_uk' [IN GT]  ->  HR='results_for_greyhound_racing_uk' [not GT]
+    pos 2: SemSort='results_for_greyhound_racing_uk' [not GT]  ->  HR='race_detail_info_for_greyhound_racing_uk' [IN GT]
+
+
+[Sample 6]  idx=9215  delta_OrdPrec=-1.0000
+  Query : I'm a huge fan of Formula 1 and I want to stay updated with the latest news. Can you fetch recent ar
+  GT    : get_recent_f1_news_from_all_sources_for_f1_latest_news -> news_from_individual_source_for_f1_latest_news
+  SemSort: get_recent_f1_news_from_all_sources_for_f1_latest_news -> news_from_individual_source_for_f1_latest_news -> get_individual_news_source_for_live_world_futbol_news
+  HR     : news_from_individual_source_for_f1_latest_news -> get_recent_f1_news_from_all_sources_for_f1_latest_news -> get_individual_news_source_for_live_world_futbol_news
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='get_recent_f1_news_from_all_sources_for_f1_latest_news' [IN GT]  ->  HR='news_from_individual_source_for_f1_latest_news' [IN GT]
+    pos 1: SemSort='news_from_individual_source_for_f1_latest_news' [IN GT]  ->  HR='get_recent_f1_news_from_all_sources_for_f1_latest_news' [IN GT]
+
+
+[Sample 7]  idx=9152  delta_OrdPrec=-1.0000
+  Query : I need to stay updated on the recent current affairs of India. Can you provide me with the latest ne
+  GT    : recent_current_affairs_for_current_affairs_of_india -> history_of_today_for_current_affairs_of_india -> Call the "day_s_international_current_affairs_for_current_affairs_of_india" function. -> I will provide the user with a list of reliable news sources where they can stay updated on the recent current affairs of India.
+  SemSort: recent_current_affairs_for_current_affairs_of_india -> history_of_today_for_current_affairs_of_india -> quiz_for_today_for_current_affairs_of_india
+  HR     : history_of_today_for_current_affairs_of_india -> quiz_for_today_for_current_affairs_of_india -> recent_current_affairs_for_current_affairs_of_india
+  Diff  : positions changed = [0, 1, 2]
+    pos 0: SemSort='recent_current_affairs_for_current_affairs_of_india' [IN GT]  ->  HR='history_of_today_for_current_affairs_of_india' [IN GT]
+    pos 1: SemSort='history_of_today_for_current_affairs_of_india' [IN GT]  ->  HR='quiz_for_today_for_current_affairs_of_india' [not GT]
+    pos 2: SemSort='quiz_for_today_for_current_affairs_of_india' [not GT]  ->  HR='recent_current_affairs_for_current_affairs_of_india' [IN GT]
+
+
+[Sample 8]  idx=9146  delta_OrdPrec=-1.0000
+  Query : My company is considering selling products on Amazon and we need to understand the different product
+  GT    : categories_list_for_amazon_data_v2 -> marketplace_list_for_amazon_data_v2 -> marketplace_list_for_amazon_data_v2 -> categories_list_for_amazon_data_v2
+  SemSort: product_category_list_for_real_time_amazon_data -> marketplace_list_for_amazon_data_v2 -> categories_list_for_amazon_data_v2
+  HR     : product_category_list_for_real_time_amazon_data -> categories_list_for_amazon_data_v2 -> marketplace_list_for_amazon_data_v2
+  Diff  : positions changed = [1, 2]
+    pos 1: SemSort='marketplace_list_for_amazon_data_v2' [IN GT]  ->  HR='categories_list_for_amazon_data_v2' [IN GT]
+    pos 2: SemSort='categories_list_for_amazon_data_v2' [IN GT]  ->  HR='marketplace_list_for_amazon_data_v2' [IN GT]
+
+
+[Sample 9]  idx=9147  delta_OrdPrec=-1.0000
+  Query : I'm a Formula 1 fan and I want to know the latest news articles. Can you fetch recent articles from 
+  GT    : get_recent_f1_news_from_all_sources_for_f1_latest_news -> news_from_individual_source_for_f1_latest_news
+  SemSort: get_recent_f1_news_from_all_sources_for_f1_latest_news -> news_from_individual_source_for_f1_latest_news -> get_individual_news_source_for_live_world_futbol_news
+  HR     : news_from_individual_source_for_f1_latest_news -> get_recent_f1_news_from_all_sources_for_f1_latest_news -> get_individual_news_source_for_live_world_futbol_news
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='get_recent_f1_news_from_all_sources_for_f1_latest_news' [IN GT]  ->  HR='news_from_individual_source_for_f1_latest_news' [IN GT]
+    pos 1: SemSort='news_from_individual_source_for_f1_latest_news' [IN GT]  ->  HR='get_recent_f1_news_from_all_sources_for_f1_latest_news' [IN GT]
+
+
+[Sample 10]  idx=8967  delta_OrdPrec=-1.0000
+  Query : My company is looking to integrate a new CRM system into our operations. We need to gather informati
+  GT    : getcompanies_for_get_360_business_tool -> getdocumenttypes_for_get_360_business_tool -> getcases_for_get_360_business_tool
+  SemSort: getcompanies_for_get_360_business_tool -> getcases_for_get_360_business_tool -> getcasessince_for_get_360_business_tool
+  HR     : getcases_for_get_360_business_tool -> getcompanies_for_get_360_business_tool -> getcasessince_for_get_360_business_tool
+  Diff  : positions changed = [0, 1]
+    pos 0: SemSort='getcompanies_for_get_360_business_tool' [IN GT]  ->  HR='getcases_for_get_360_business_tool' [IN GT]
+    pos 1: SemSort='getcases_for_get_360_business_tool' [IN GT]  ->  HR='getcompanies_for_get_360_business_tool' [IN GT]

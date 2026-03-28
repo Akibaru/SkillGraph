@@ -1,0 +1,9 @@
+{
+  "n_records": 50,
+  "n_tools": 21,
+  "gt_len_dist": {
+    "2": 36,
+    "3": 14
+  },
+  "mean_gt_len": 2.28
+}

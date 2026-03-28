@@ -1,0 +1,601 @@
+method,idx,raw_output,set_f1,ordered_precision,kendall_tau,transition_acc,first_tool_acc,pred_len,gt_len
+llm_zero_shot,0,get_trend_keyword_for_trends_keywords_in_different_regions -> get_geo_map_for_regions_for_trends_keywords_in_different_regions -> airports_for_database_of_airports_api,0.8,0.0,-1.0,0.5,1.0,3,3
+llm_few_shot,0,get_trend_keyword_for_trends_keywords_in_different_regions -> get_geo_map_for_regions_for_trends_keywords_in_different_regions -> get_sub_regions_for_geography,0.8,0.0,-1.0,0.5,1.0,3,3
+llm_zero_shot,1,anime_for_anime_manga_and_novels_api -> get_novel_by_id_for_anime_manga_and_novels_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,1,anime_for_anime_manga_and_novels_api -> get_novel_by_id_for_anime_manga_and_novels_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,2,languages_for_google_translate -> profanity_filter_health_for_profanity_filter_v2,1.0,1.0,1.0,0.6667,1.0,2,4
+llm_few_shot,2,languages_for_google_translate -> profanity_filter_health_for_profanity_filter_v2,1.0,1.0,1.0,0.6667,1.0,2,4
+llm_zero_shot,3,generate_a_random_word_for_random_word_generator -> activities_for_youtube_v3_v3,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,3,generate_a_random_word_for_random_word_generator -> activities_for_youtube_v3_v3,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,4,current_time_by_ip_for_world_time -> getdatetimebytimezone_for_date_and_time,0.5,0.0,0.0,0.0,1.0,2,2
+llm_few_shot,4,current_time_by_ip_for_world_time -> getdatetimebytimezone_for_date_and_time,0.5,0.0,0.0,0.0,1.0,2,2
+llm_zero_shot,5,1 -> get_appointments_for_appointment_system_api -> get_customized_plan_for_workout_planner -> view_all_food_items_for_ind_nutrient_api -> login_for_appointment_system_api,0.8889,0.5,0.0,0.5,0.0,4,5
+llm_few_shot,5,get_appointments_for_appointment_system_api -> get_customized_plan_for_workout_planner -> view_all_food_items_for_ind_nutrient_api -> search_country_by_name_for_location_and_time -> functions.Finish,0.75,1.0,1.0,0.5,0.0,3,5
+llm_zero_shot,6,view_db_for_face_recognition -> read_reject_reasons_for_ironwifi,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,6,view_db_for_face_recognition,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,7,custom_dice_rolls_for_dice_roll_simulator -> regular_dice_rolls_for_dice_roll_simulator,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,7,custom_dice_rolls_for_dice_roll_simulator -> regular_dice_rolls_for_dice_roll_simulator,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,8,get_realtime_volume_for_realtime_crypto_prices -> get_liquidity_value_for_realtime_crypto_prices -> get_realtime_rates_for_realtime_crypto_prices -> esg_risk_rating_for_esg_risk_ratings_for_stocks,1.0,0.8333,0.6667,0.6667,0.0,4,4
+llm_few_shot,8,get_realtime_volume_for_realtime_crypto_prices -> get_liquidity_value_for_realtime_crypto_prices -> get_realtime_rates_for_realtime_crypto_prices -> esg_risk_rating_for_esg_risk_ratings_for_stocks,1.0,0.8333,0.6667,0.6667,0.0,4,4
+llm_zero_shot,9,teams_coaches_teamids_for_baseball -> leagues_for_baseball,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,9,teams_coaches_teamids_for_baseball -> teams_squad_for_baseballapi -> leagues_for_baseball,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,10,get_trivia_fact_for_numbers -> jokes_search_for_chuck_norris,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,10,get_trivia_fact_for_numbers -> jokes_search_for_chuck_norris,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,11,getpetbyid_for_privatepublicapi -> getuserbyname_for_privatepublicapi,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,11,getpetbyid_for_privatepublicapi -> getuserbyname_for_privatepublicapi,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,12,get_specific_climate_change_news_for_climate_change_api_v5 -> getnewsfeed_for_helioviewer_v1 -> astronomy_api_for_weatherapi_com -> get_all_chemical_elements_for_chemical_elements,0.5,1.0,1.0,0.3333,0.0,4,4
+llm_few_shot,12,get_unique_travel_destinations_for_travel_api -> get_weather_forecast_for_weather_v3 -> get_historical_facts_for_history_api -> get_off_the_beaten_path_travel_spots_for_travel_api,0.0,0.0,0.0,0.0,0.0,0,4
+llm_zero_shot,13,get_trip_plan_for_ai_trip_planner -> results_for_kayak_flights -> flight_api_for_flight_v2,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_few_shot,13,get_trip_plan_for_ai_trip_planner -> results_for_kayak_flights,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_zero_shot,14,1 -> 5 -> 2 -> 10,0.0,0.0,0.0,0.0,0.0,0,4
+llm_few_shot,14,products_search_by_barcode_for_hm_hennes_mauritz -> get_call_for_national_id_vietnam_ocr -> parse_for_url_metadata_opengraph -> products_search_by_barcode_for_hm_hennes_mauritz,0.8,0.0,-1.0,0.0,0.0,2,4
+llm_zero_shot,15,v1_trivia_for_trivia_by_api_ninjas -> get_random_fact_for_numbers -> v1_trivia_for_trivia_by_api_ninjas,1.0,0.0,-1.0,0.0,0.0,2,3
+llm_few_shot,15,get_random_fact_for_numbers -> get_specific_dessert_for_pizza_and_desserts -> v1_trivia_for_trivia_by_api_ninjas,0.8,1.0,1.0,0.5,1.0,3,3
+llm_zero_shot,16,get_all_climate_change_related_news_for_climate_news_api_v2 -> get_all_lgbtq_news_for_lgbtq_world_news_live,1.0,1.0,1.0,0.3333,1.0,2,4
+llm_few_shot,16,get_all_climate_change_related_news_for_climate_news_api_v2 -> get_all_lgbtq_news_for_lgbtq_world_news_live -> event_statistics_for_flashlive_sports -> get_all_lgbtq_news_for_lgbtq_world_news_live,0.8,1.0,1.0,0.3333,1.0,3,4
+llm_zero_shot,17,create_a_group_for_whin -> group_invite_link_for_whin -> delete_url_for_whin -> hk_receiver_for_whin -> list_groups_for_whin,1.0,0.6,0.2,0.25,1.0,5,5
+llm_few_shot,17,create_a_group_for_whin -> group_invite_link_for_whin -> delete_url_for_whin -> hk_receiver_for_whin -> list_groups_for_whin,1.0,0.6,0.2,0.25,1.0,5,5
+llm_zero_shot,18,get_specific_user_for_node_express_api_tutorial -> get_all_users_for_node_express_api_tutorial -> epname_for_pl1box1 -> search_zip_codes_in_mexico_for_be_zips -> suggests_create_throwback_memories_collection,0.75,1.0,1.0,0.25,1.0,3,5
+llm_few_shot,18,get_specific_user_for_node_express_api_tutorial -> get_all_users_for_node_express_api_tutorial -> epname_for_pl1box1 -> search_zip_codes_in_mexico_for_be_zips -> suggests_collection_for_guests,0.75,1.0,1.0,0.25,1.0,3,5
+llm_zero_shot,19,wrestling_news_for_wrestling_api -> _jokes_in_a_single_category_for_the_dozen_the_yo_mamsa_roast_api -> get_specific_insult_for_the_dozen_the_yo_mamsa_roast_api -> wrestling_api_home_for_wrestling_api,1.0,0.3333,-0.3333,0.3333,0.0,4,4
+llm_few_shot,19,wrestling_news_for_wrestling_api -> get_specific_insult_for_the_dozen_the_yo_mamsa_roast_api,0.6667,1.0,1.0,0.3333,0.0,2,4
+llm_zero_shot,20,cards_by_quality_for_hearthstone -> get_random_fact_for_numbers -> exchange_for_currency_exchange,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,20,cards_by_quality_for_hearthstone -> get_random_fact_for_numbers,0.5,0.0,0.0,0.0,0.0,2,2
+llm_zero_shot,21,sentiment_analysis_for_google_s_bert_sentiment_analysis -> get_and_compate_products_allover_the_web,0.6667,0.0,0.0,0.0,0.0,1,2
+llm_few_shot,21,exchange_for_currency_exchange -> sentiment_analysis_for_google_s_bert_sentiment_analysis,0.6667,0.0,0.0,0.0,0.0,1,2
+llm_zero_shot,22,measure_distance_for_nigeria_api -> facilities_lookup_for_nigeria_api -> measure_distance_for_nigeria_api,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,22,measure_distance_for_nigeria_api -> facilities_lookup_for_nigeria_api -> measure_distance_for_nigeria_api,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,23,1 -> njajal_for_new_client -> options_for_translate_it,0.5,0.0,0.0,0.0,1.0,2,2
+llm_few_shot,23,njajal_for_new_client -> categoryschedules_for_rugbyapi2,0.5,0.0,0.0,0.0,1.0,2,2
+llm_zero_shot,24,appointment_time_list_for_appointment_system_api -> get_user_info_for_tiktok_download_video -> caiso_for_caiso -> search_product_details_for_barcodes,0.2857,0.0,0.0,0.0,1.0,4,4
+llm_few_shot,24,login_for_appointment_system_api -> get_appointments_for_appointment_system_api -> caiso_for_caiso -> cart_for_direct_wines,0.5714,1.0,1.0,0.3333,0.0,4,4
+llm_zero_shot,25,get_languages_for_rapid_translate -> get_supported_languages_for_aibit_translator -> competitions_get_short_info_for_transfermarket -> search_posts_for_reddit_fast_search,0.5,1.0,1.0,0.3333,1.0,4,4
+llm_few_shot,25,get_languages_for_rapid_translate -> get_supported_languages_for_aibit_translator -> get_language_games_for_tiktok_video_feature_summary -> get_language_learning_resources_for_tiktok_video_feature_summary,0.6667,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,26,goo_translate_languages_for_cheap_translate -> languages_for_microsoft_translator_text -> md5_text_hash_for_hashing_api,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,26,translate_languages_for_cheap_translate -> goo_translate_languages_for_cheap_translate -> languages_for_microsoft_translator_text,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_zero_shot,27,get_next_predictions_for_predictx -> match_lineup_for_soccer_data,0.6667,0.0,0.0,0.0,1.0,2,2
+llm_few_shot,27,get_next_predictions_for_predictx -> match_lineup_for_soccer_data,0.6667,0.0,0.0,0.0,1.0,2,2
+llm_zero_shot,28,gameslist_for_steamgames_special_offers -> gamesdata_for_steamgames_special_offers -> text_for_fancy_text,0.8,1.0,1.0,0.5,1.0,3,3
+llm_few_shot,28,gameslist_for_steamgames_special_offers -> gamesdata_for_steamgames_special_offers -> gamesdata_for_steamgames_special_offers,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,29,get_period_for_horoscopes_ai -> get_types_for_horoscopes_ai -> get_horoscope_english_only_for_horoscopes_ai -> get_types_for_horoscopes_ai,0.8571,1.0,1.0,0.6667,1.0,3,4
+llm_few_shot,29,get_horoscope_english_only_for_horoscopes_ai -> get_types_for_horoscopes_ai -> get_period_for_horoscopes_ai -> get_horoscope_multilingual_for_horoscopes_ai,1.0,0.5,0.0,0.0,0.0,4,4
+llm_zero_shot,30,getproduct_for_maytapi_whatsapp -> getgroups_for_maytapi_whatsapp -> logs_for_maytapi_whatsapp -> read_for_sms77io,1.0,1.0,1.0,1.0,1.0,4,4
+llm_few_shot,30,getproduct_for_maytapi_whatsapp -> getgroups_for_maytapi_whatsapp -> logs_for_maytapi_whatsapp -> read_for_sms77io,1.0,1.0,1.0,1.0,1.0,4,4
+llm_zero_shot,31,genre_for_deezer -> song_info_for_soundcloud -> getallsign_for_zodiac_sign_api -> account_transaction_count_for_binance_smart_chain,0.6667,1.0,1.0,0.6667,1.0,4,4
+llm_few_shot,31,genre_for_deezer -> song_info_for_soundcloud,1.0,1.0,1.0,0.6667,1.0,2,4
+llm_zero_shot,32,get_all_players_for_valorant_esports_v2 -> uuid_to_name_for_minecraft_uuid_converter,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,32,get_all_players_for_valorant_esports_v2 -> uuid_to_name_for_minecraft_uuid_converter,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,33,jokes_random_for_chuck_norris -> getpercentage_for_love_calculator -> get_specific_player_for_free_nba,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,33,jokes_random_for_chuck_norris -> getpercentage_for_love_calculator -> get_specific_player_for_free_nba,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,34,actors_for_marvel_heroic_api_unlock_the_mcu_legendary_characters -> get_reference_currencies_for_coinranking -> check_for_email_validator_v9 -> or_etsy_products_api_allows_you_to_scrape_the_products_from_etsy -> sort_live_giveaways_for_gamerpower,0.0,0.0,0.0,0.0,0.0,3,5
+llm_few_shot,34,actors_for_marvel_heroic_api_unlock_the_mcu_legendary_characters -> get_all_collections_by_user_for_pulsar -> check_for_email_validator_v9 -> get_reference_currencies_for_coinranking -> or_etsy_products_api,0.0,0.0,0.0,0.0,0.0,1,5
+llm_zero_shot,35,jokes_random_for_chuck_norris -> getpercentage_for_love_calculator -> options_for_translate_it,0.6667,1.0,1.0,0.0,1.0,3,3
+llm_few_shot,35,jokes_random_for_chuck_norris -> getpercentage_for_love_calculator -> jokes_search_for_chuck_norris,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_zero_shot,36,stateusaprice_for_gas_price -> usacitieslist_for_gas_price -> stateusaprice_for_gas_price,0.8,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,36,stateusaprice_for_gas_price -> usacitieslist_for_gas_price -> usacitieslist_for_gas_price,0.8,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,37,search_for_webit_image_search -> reverse_search_by_image_for_webit_image_search,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,37,search_for_webit_image_search -> reverse_search_by_image_for_webit_image_search,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,38,open_proxies_for_open_proxies -> hourly_open_proxies_for_open_proxies -> daily_open_proxies_for_open_proxies,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,38,open_proxies_for_open_proxies -> hourly_open_proxies_for_open_proxies -> daily_open_proxies_for_open_proxies,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,39,keyword_search_at_coordinate_point_for_local_rank_tracker -> calculate_grid_coordinate_points_for_local_rank_tracker,0.8,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,39,keyword_search_at_coordinate_point_for_local_rank_tracker -> calculate_grid_coordinate_points_for_local_rank_tracker,0.8,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,40,get_random_fact_for_numbers -> listquotes_for_currency_exchange -> search_for_deezer,1.0,0.6667,0.3333,0.5,0.0,3,3
+llm_few_shot,40,get_random_fact_for_numbers -> listquotes_for_currency_exchange -> search_for_deezer,1.0,0.6667,0.3333,0.5,0.0,3,3
+llm_zero_shot,41,top_memes_for_reddit_meme -> top_memes_for_reddit_meme,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,41,top_memes_for_reddit_meme -> top_memes_for_reddit_meme,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,42,get_all_chapters_for_bhagavad_gita_v3 -> flashcards_for_real_estate_exam,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,42,get_all_chapters_for_bhagavad_gita_v3 -> flashcards_for_real_estate_exam -> get_all_locations_for_art_openings_italy,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,43,songs_v2_get_details_for_shazam -> billboard_200_for_billboard_api -> radio_for_deezer,1.0,0.6667,0.3333,0.6667,1.0,3,4
+llm_few_shot,43,songs_v2_get_details_for_shazam -> billboard_200_for_billboard_api -> radio_for_deezer,1.0,0.6667,0.3333,0.6667,1.0,3,4
+llm_zero_shot,44,getcurrentbyvaluegrowthmomentum_for_earningsdata -> getbystock_for_earningsdata -> getcurrentbysymbol_for_earningsdata -> Finish,0.6667,1.0,1.0,0.3333,1.0,2,4
+llm_few_shot,44,getcurrentbyvaluegrowthmomentum_for_earningsdata -> getbystock_for_earningsdata -> getbydate_for_earningsdata -> Finish,0.4,0.0,0.0,0.0,1.0,1,4
+llm_zero_shot,45,bulk_whois_for_bulk_whois -> whois_lookup_v1_for_whois -> whoisserver_dnsservice_for_dns_lookup_v2 -> get_your_whois_batches_for_bulk_whois,1.0,0.8333,0.6667,0.6667,0.0,4,4
+llm_few_shot,45,whois_lookup_v1_for_whois -> whoisserver_dnsservice_for_dns_lookup_v2 -> get_your_whois_batches_for_bulk_whois -> bulk_whois_for_bulk_whois,1.0,0.6667,0.3333,0.3333,1.0,4,4
+llm_zero_shot,46,1 -> getallcategories_for_reading_home_apis -> getbooksbycategory_for_reading_home_apis,0.0,0.0,0.0,0.0,0.0,0,3
+llm_few_shot,46,getallcategories_for_reading_home_apis -> getbooksbycategory_for_reading_home_apis -> getbooksbycategory_for_reading_home_apis,0.0,0.0,0.0,0.0,0.0,0,3
+llm_zero_shot,47,top_nfts_this_week_for_top_nft_sales -> top_collections_this_week_for_top_nft_sales,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,47,top_nfts_this_week_for_top_nft_sales -> top_collections_this_week_for_top_nft_sales,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,48,n_a_country_for_forecast_crypto_and_fiat_currency_exchange_rates -> listquotes_for_currency_exchange -> get_math_fact_for_numbers,0.8,1.0,1.0,0.0,1.0,2,3
+llm_few_shot,48,n_a_country_for_forecast_crypto_and_fiat_currency_exchange_rates -> listquotes_for_currency_exchange -> get_math_fact_for_numbers,0.8,1.0,1.0,0.0,1.0,2,3
+llm_zero_shot,49,locations_v2_auto_complete_for_the_fork_the_spoon -> locations_v2_list_for_the_fork_the_spoon -> restaurants_v2_list_for_the_fork_the_spoon -> sources_for_newsdata -> user_id_by_username_for_twitter,0.6667,1.0,1.0,0.5,1.0,5,5
+llm_few_shot,49,locations_v2_auto_complete_for_the_fork_the_spoon -> restaurants_list_deprecated_for_the_fork_the_spoon -> restaurants_v2_list_for_the_fork_the_spoon -> get_restaurant_details_for_the_fork_the_spoon -> get_restaurant_details_for_the_fork_the_spoon,0.8571,1.0,1.0,0.25,1.0,3,5
+llm_zero_shot,50,get_models_for_omniinfer -> get_predictive_spikes_by_coin_name_for_crowdsense -> progress_for_omniinfer,1.0,0.0,-1.0,0.0,0.0,2,3
+llm_few_shot,50,progress_for_omniinfer -> get_models_for_omniinfer,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,51,1 -> get_list_of_languages_for_businessmate -> search_all_cars_for_all_cars_names_image_and_variants_info -> staurant_locations_by_state_and_city_for_restaurants_near_me_usa,0.8571,0.3333,-0.3333,0.3333,0.0,3,4
+llm_few_shot,51,search_all_cars_for_all_cars_names_image_and_variants_info -> get_list_of_languages_for_businessmate -> staurant_locations_by_state_and_city_for_restaurants_near_me_usa -> search_all_cars_for_all_cars_names_image_and_variants_info,0.8571,0.0,-1.0,0.0,0.0,3,4
+llm_zero_shot,52,getmatchesbyteam_for_ipl_api -> major_league_soccer_standings_for_major_league_soccer_standings,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,52,getmatchesbyteam_for_ipl_api -> major_league_soccer_standings_for_major_league_soccer_standings,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,53,brands_detail_for_consumer_reports -> products_list_for_consumer_reports -> brands_detail_for_consumer_reports,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_few_shot,53,brands_detail_for_consumer_reports -> products_list_for_consumer_reports -> brands_detail_for_consumer_reports,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,54,autocomplete_for_web_search -> websearch_for_web_search,0.8,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,54,websearch_for_web_search -> autocomplete_for_web_search,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_zero_shot,55,logical_fallacies_en_json_for_daily_knowledge -> nitrous_endpoint_for_atmosphere_nitrous_oxide_levels,0.8,1.0,1.0,0.0,1.0,2,3
+llm_few_shot,55,logical_fallacies_en_json_for_daily_knowledge -> nitrous_endpoint_for_atmosphere_nitrous_oxide_levels -> logical_fallacies_en_json_for_daily_knowledge,0.8,1.0,1.0,0.0,1.0,2,3
+llm_zero_shot,56,fish_api_fishes_for_fish_species -> gettopbacklinks_for_seo_api_get_backlinks,0.8,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,56,fish_api_fishes_for_fish_species -> gettopbacklinks_for_seo_api_get_backlinks,0.8,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,57,get_astronomy_data_for_stormglass_complete -> get_tide_extreme_data_for_stormglass_complete,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,57,get_astronomy_data_for_stormglass_complete -> get_tide_extreme_data_for_stormglass_complete,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,58,jokes_random_for_chuck_norris -> random_for_manatee_jokes -> v1_jokes_for_jokes_by_api_ninjas -> quote_for_quotes,1.0,0.8333,0.6667,0.6667,0.0,4,4
+llm_few_shot,58,random_for_manatee_jokes -> jokes_random_for_chuck_norris -> v1_jokes_for_jokes_by_api_ninjas -> quote_for_quotes,1.0,1.0,1.0,1.0,1.0,4,4
+llm_zero_shot,59,brad_pitt_for_starlovematch -> get_wisdom_quote_by_id_for_wisdom_quotes -> match_for_starlovematch,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_few_shot,59,brad_pitt_for_starlovematch -> get_wisdom_quote_by_id_for_wisdom_quotes -> match_for_starlovematch,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_zero_shot,60,categoryschedules_for_esportapi -> gamebans_for_esportapi -> getfileslist_for_groupdocs_metadata_cloud,0.8,0.0,-1.0,0.5,1.0,3,3
+llm_few_shot,60,categoryschedules_for_esportapi -> gamebans_for_esportapi -> categoryschedules_for_esportapi,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,61,get_websites_for_amazon_web_scraping_api -> search_products_all_countries_for_amazon_web_scraping_api -> get_deals_for_amazon_web_scraping_api -> api_getvisits_for_similarweb_historical_data -> business_units_search_for_unofficial_trust_pilot,0.75,1.0,1.0,0.5,1.0,5,5
+llm_few_shot,61,search_products_all_countries_for_amazon_web_scraping_api -> get_websites_for_amazon_web_scraping_api,0.8,0.0,-1.0,0.0,0.0,2,5
+llm_zero_shot,62,get_airports_for_airportsdata -> get_team_win_data_for_nfl_team_stats_v2 -> list_all_countries_for_world_bank_gdp -> list_of_countries_with_income_level_for_world_bank_gdp,0.8571,0.6667,0.3333,0.0,1.0,4,4
+llm_few_shot,62,get_airports_for_airportsdata -> list_all_countries_for_world_bank_gdp -> list_of_countries_with_income_level_for_world_bank_gdp -> get_airports_for_airportsdata,1.0,0.6667,0.3333,0.3333,1.0,3,4
+llm_zero_shot,63,check_residential_proxies_service_status_for_ephemeral_proxies -> check_datacenter_proxies_service_status_for_ephemeral_proxies -> javascript_rendered_page_get_for_scraper_s_proxy -> email_validation_api_for_email_validation_and_verification -> proxies_example_json_for_proxy_spider_proxies,0.8,1.0,1.0,0.5,1.0,5,5
+llm_few_shot,63,check_residential_proxies_service_status_for_ephemeral_proxies -> check_datacenter_proxies_service_status_for_ephemeral_proxies -> proxies_example_json_for_proxy_spider_proxies -> javascript_rendered_page_get_for_scraper_s_proxy -> get_all_city_names_for_kfc_locations,0.8,0.8333,0.6667,0.25,1.0,5,5
+llm_zero_shot,64,infos_for_deezer -> v1_caloriesburned_for_calories_burned_by_api_ninjas -> get_appointments_for_appointment_system_api -> get_bookings_information_for_sagenda_v3,0.6667,1.0,1.0,0.3333,1.0,3,4
+llm_few_shot,64,v1_caloriesburned_for_calories_burned_by_api_ninjas -> get_appointments_for_appointment_system_api -> appointment_time_list_for_appointment_system_api -> infos_for_deezer,1.0,0.6667,0.3333,0.6667,1.0,3,4
+llm_zero_shot,65,retrieve_listings_for_openblur -> issuspicious_for_openblur,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,65,retrieve_listings_for_openblur -> issuspicious_for_openblur,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,66,apostaganha_aviator_latest_for_aposta_ganha_aviator_api -> vaidebob_aviator_latest_for_vai_de_bob_aviator_api -> create_for_sudoku_all_purpose_pro -> solve_for_sudoku_all_purpose_pro,1.0,0.8333,0.6667,0.6667,0.0,4,4
+llm_few_shot,66,apostaganha_aviator_latest_for_aposta_ganha_aviator_api -> vaidebob_aviator_latest_for_vai_de_bob_aviator_api -> create_for_sudoku_all_purpose_pro -> solve_for_sudoku_all_purpose_pro,1.0,0.8333,0.6667,0.6667,0.0,4,4
+llm_zero_shot,67,getproductbyname_for_cartify -> getproducts_for_cartify -> getproductbycategory_for_cartify,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,67,getproductbyname_for_cartify -> getproducts_for_cartify -> getproductbycategory_for_cartify,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,68,listpornstars_for_papi_pornstarsapi -> None,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,68,listpornstars_for_papi_pornstarsapi -> contests_for_contests,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,69,1_3_get_info_day_for_working_days -> get_base_information_for_al_quran -> eventlist_for_get_31events_send_native_calendar_invites,0.5,0.0,0.0,0.0,0.0,2,3
+llm_few_shot,69,1_3_get_info_day_for_working_days -> get_base_information_for_al_quran -> differentiate_for_mathematical_symbolic_expression_manipulator,0.0,0.0,0.0,0.0,0.0,2,3
+llm_zero_shot,70,jokes_random_for_chuck_norris -> get_trivia_fact_for_numbers -> get_date_fact_for_numbers,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,70,jokes_random_for_chuck_norris -> get_trivia_fact_for_numbers -> get_date_fact_for_numbers,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,71,"all_for_coupons -> getuservideos_for_helioviewer_v1 -> latest_news_on_crypto_for_h_crypto_news -> introduction_page_for_political_bias_database -> Call the ""Finish"" function with the final answer explaining the non-existence of the pet and the order.",0.25,0.0,0.0,0.0,1.0,4,5
+llm_few_shot,71,all_for_coupons -> getuservideos_for_helioviewer_v1 -> latest_news_on_crypto_for_h_crypto_news -> introduction_page_for_political_bias_database -> all_for_coupons,0.25,0.0,0.0,0.0,1.0,4,5
+llm_zero_shot,72,get_status_for_sms77io -> get_content_for_line_messaging,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,72,get_status_for_sms77io -> get_content_for_line_messaging,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,73,validate_email_address_for_email_address_validator -> get_fake_email_address_for_email_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,73,validate_email_address_for_email_address_validator -> get_fake_email_address_for_email_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,74,etting_odds_for_tank01_nfl_live_in_game_real_time_statistics_nfl -> team_roster_for_tank01_nfl_live_in_game_real_time_statistics_nfl,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,74,etting_odds_for_tank01_nfl_live_in_game_real_time_statistics_nfl -> getteam_roster_for_tank01_nfl_live_in_game_real_time_statistics_nfl,0.6667,0.0,0.0,0.0,1.0,1,2
+llm_zero_shot,75,jokes_random_for_chuck_norris -> businessplan_for_business_starter_api -> list_folder_contents_for_git_pager,0.4,0.0,0.0,0.0,0.0,2,3
+llm_few_shot,75,twt_for_hello_rold -> businessplan_for_business_starter_api -> list_folder_contents_for_git_pager,0.4,0.0,0.0,0.0,0.0,2,3
+llm_zero_shot,76,get_call_for_voter_card_verifications -> api_v1_for_subdomains_lookup -> get_10_year_bond_yield_for_u_s_economic_indicators,0.8,1.0,1.0,0.5,1.0,3,3
+llm_few_shot,76,get_call_for_voter_card_verifications -> api_v1_for_subdomains_lookup,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,77,get_country_codes_for_truecaller_v2 -> get_details_for_truecaller_v2,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,77,get_country_codes_for_truecaller_v2 -> get_details_for_truecaller_v2,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,78,4 -> 4 -> 2 -> 3,0.0,0.0,0.0,0.0,0.0,0,4
+llm_few_shot,78,"search_products_for_shopeeapi -> Call the function ""search_products_for_shopeeapi"" with the region set to ""vn"" and the query set to the specific laptop model, such as ""Dell XPS 13"". -> Call the function ""Finish"" with the ""give_answer"" return type, providing the final answer that the laptop could not be found on Shopee.",0.8571,1.0,1.0,0.3333,1.0,3,4
+llm_zero_shot,79,fur_color_for_dogbreeddb -> type_portfolio_get_asset_allocation_for_morning_star -> generate_rss_feed_for_twitter_rss -> 8,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,79,fur_color_for_dogbreeddb -> get_all_breeds_for_dogbreeddb,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,80,font_for_typography -> random_for_typography -> tone_for_typography -> type_for_typography,1.0,0.0,-1.0,0.0,0.0,4,4
+llm_few_shot,80,font_for_typography -> random_for_typography -> tone_for_typography -> type_for_typography,1.0,0.0,-1.0,0.0,0.0,4,4
+llm_zero_shot,81,get_detailed_state_data_for_us_states -> search_states_by_name_for_us_states -> get_music_for_tiktok_private,0.8,1.0,1.0,0.5,1.0,3,3
+llm_few_shot,81,get_detailed_state_data_for_us_states -> get_detailed_state_data_for_us_states -> search_states_by_name_for_us_states,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,82,aliexpress_item_shipping_detail_for_aliexpress_datahub -> aliexpress_item_detail_2_for_aliexpress_datahub -> tweet_details_for_twitter_aio,0.8,0.0,-1.0,0.5,1.0,3,3
+llm_few_shot,82,aliexpress_item_shipping_detail_for_aliexpress_datahub -> aliexpress_item_detail_2_for_aliexpress_datahub -> tweet_details_for_twitter_aio,0.8,0.0,-1.0,0.5,1.0,3,3
+llm_zero_shot,83,search_locations_for_instagram_v2 -> auto_complete_for_twitter_v2_v2 -> get_album_tracks_for_spotify_data_api -> singleoffer_for_lbc_shark -> feed_by_username_for_instagram_1 -> retrieve_specific_queue_time_for_unofficial_efteling_api,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,83,search_locations_for_instagram_v2 -> feed_by_username_for_instagram_1,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,84,get_by_decade_for_world_population_by_decade_and_growth_rate -> get_by_filter_for_world_population_by_decade_and_growth_rate -> get_by_decade_for_world_population_by_decade_and_growth_rate,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_few_shot,84,get_by_decade_for_world_population_by_decade_and_growth_rate -> get_by_filter_for_world_population_by_decade_and_growth_rate,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,85,get_vrbo_listing_reviews_for_vrm_str_tools -> get_airbnb_listing_ratings_for_vrm_str_tools -> get_airbnb_listing_reviews_for_vrm_str_tools -> get_vrbo_listing_reviews_for_vrm_str_tools,1.0,0.3333,-0.3333,0.6667,1.0,3,4
+llm_few_shot,85,get_vrbo_listing_reviews_for_vrm_str_tools -> get_airbnb_listing_ratings_for_vrm_str_tools -> get_airbnb_listing_reviews_for_vrm_str_tools -> get_airbnb_listing_ratings_for_vrm_str_tools,1.0,0.3333,-0.3333,0.6667,1.0,3,4
+llm_zero_shot,86,random_for_manatee_jokes -> v1_memes_for_programming_memes_images,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,86,random_for_manatee_jokes -> v1_memes_for_programming_memes_images,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,87,get_math_fact_for_numbers -> get_random_fact_for_numbers -> jokes_random_for_chuck_norris -> get_trivia_fact_for_numbers,1.0,0.6667,0.3333,0.3333,1.0,4,4
+llm_few_shot,87,get_math_fact_for_numbers -> get_trivia_fact_for_numbers -> get_random_fact_for_numbers -> jokes_random_for_chuck_norris,1.0,1.0,1.0,1.0,1.0,4,4
+llm_zero_shot,88,word_for_lorem_ipsum_api -> sentence_for_lorem_ipsum_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,88,word_for_lorem_ipsum_api -> sentence_for_lorem_ipsum_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,89,iplookup_for_greip -> track_for_deezer -> matches_for_bildbet,0.0,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,89,iplookup_for_greip -> track_for_deezer,0.0,0.0,0.0,0.0,0.0,1,2
+llm_zero_shot,90,europeancountries_for_gas_price -> allusaprice_for_gas_price,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,90,europeancountries_for_gas_price -> allusaprice_for_gas_price,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,91,organic_results_for_google_search_2 -> retrieve_bids_for_openblur,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_few_shot,91,organic_results_for_google_search_2 -> retrieve_bids_for_openblur,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,92,ohlc_for_investors_exchange_iex_trading -> get_24_hours_tickers_for_quantaex_market_data -> options_for_stock_and_options_trading_data_provider -> ohlc_for_investors_exchange_iex_trading,0.8571,0.6667,0.3333,0.3333,0.0,3,4
+llm_few_shot,92,ohlc_for_investors_exchange_iex_trading -> get_24_hours_tickers_for_quantaex_market_data -> options_for_stock_and_options_trading_data_provider,0.8571,0.6667,0.3333,0.3333,0.0,3,4
+llm_zero_shot,93,get_next_games_for_viperscore -> get_best_player_for_viperscore -> get_next_games_for_viperscore -> get_best_player_for_viperscore,0.8,1.0,1.0,0.0,1.0,2,4
+llm_few_shot,93,get_next_games_for_viperscore -> get_best_player_for_viperscore -> get_best_player_for_viperscore -> get_next_games_for_viperscore,0.8,1.0,1.0,0.0,1.0,2,4
+llm_zero_shot,94,get_item_by_id_for_rpg_items -> gue_of_legends_champion_for_league_of_legends_champion_generator -> random_for_chess_puzzles_v2,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_few_shot,94,get_item_by_id_for_rpg_items -> get_random_for_chess_puzzles_v2 -> gue_of_legends_champion_for_league_of_legends_champion_generator,0.8,1.0,1.0,0.0,1.0,2,3
+llm_zero_shot,95,1 -> getbreadcrumbnavitem_for_sportapi -> matches_for_admiralbet -> fetch_manga_for_mangaverse_api,0.5,0.0,0.0,0.0,1.0,2,4
+llm_few_shot,95,"matches_for_admiralbet -> getbreadcrumbnavitem_for_sportapi -> fetch_manga_for_mangaverse_api -> Call the function ""getbreadcrumbnavitem_for_sportapi"" to fetch the breadcrumb navigation item for the party website.",0.5,0.0,0.0,0.0,1.0,2,4
+llm_zero_shot,96,list_of_cocktails_for_the_cocktail_db_v2 -> search_foods_using_keywords_for_food_nutrition_information -> list_of_cocktails_for_the_cocktail_db_v2,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,96,list_of_cocktails_for_the_cocktail_db_v2 -> search_foods_using_keywords_for_food_nutrition_information -> list_of_cocktails_for_the_cocktail_db_v2,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,97,findbypincode_for_india_pincode_api -> findpincodebysubdistrict_for_india_pincode_api,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_few_shot,97,findbypincode_for_india_pincode_api -> findpincodebysubdistrict_for_india_pincode_api -> findpincodebysubdistrict_for_india_pincode_api,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,98,6 -> 11 -> 12 -> 5 -> 1 -> 3,0.0,0.0,0.0,0.0,0.0,0,6
+llm_few_shot,98,random_quote_generator -> word_generator -> search_for_parenting_tips_and_advice_articles_online -> _chiliz_balance_from_specific_network_for_cryptocurrency_balance -> getgroups_for_maytapi_whatsapp -> checknumberstatus_for_maytapi_whatsapp,0.4444,0.0,-1.0,0.0,0.0,3,6
+llm_zero_shot,99,get_request_for_url_shortener_we_store_your_links_forever -> search_for_joj_web_search,0.8,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,99,get_request_for_url_shortener_we_store_your_links_forever -> url_metrics_for_domain_da_pa_check -> search_for_joj_web_search,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_zero_shot,100,alldetails_185_225_233_110_30015_for_vrising_server_query_api -> playercount_185_225_233_110_30015_for_vrising_server_query_api -> connectip_185_225_233_110_30015_for_vrising_server_query_api -> description_185_225_233_110_30015_for_vrising_server_query_api,0.8889,0.8333,0.6667,0.5,0.0,4,5
+llm_few_shot,100,playercount_185_225_233_110_30015_for_vrising_server_query_api -> alldetails_185_225_233_110_30015_for_vrising_server_query_api -> connectip_185_225_233_110_30015_for_vrising_server_query_api -> description_185_225_233_110_30015_for_vrising_server_query_api -> discord_185_225_233_110_30015_for_vrising_server_query_api,1.0,1.0,1.0,1.0,1.0,5,5
+llm_zero_shot,101,getrandom_for_randomizer -> search_patent_for_global_patent -> words2number_for_words_to_numbers -> distinct_tickers_for_business_credit_scores,0.6667,1.0,1.0,0.3333,1.0,4,4
+llm_few_shot,101,getrandom_for_randomizer -> search_patent_for_global_patent,1.0,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,102,t_height_in_feet_and_inches_input_weight_in_kilograms_for_bmi_v2 -> gives_the_weight_catergory_based_on_the_bmi_for_bmi_v2,0.8,1.0,1.0,0.5,0.0,2,3
+llm_few_shot,102,t_height_in_feet_and_inches_input_weight_in_kilograms_for_bmi_v2 -> gives_the_weight_catergory_based_on_the_bmi_for_bmi_v2 -> t_analysis_from_symbol_for_tradingview_ta_api_technical_analysis,0.8,1.0,1.0,0.5,0.0,2,3
+llm_zero_shot,103,getgamesbycategory_for_unigamer_api -> search_on_sale_games_for_epic_store_games,1.0,1.0,1.0,0.6667,1.0,2,4
+llm_few_shot,103,getgamesbycategory_for_unigamer_api -> search_on_sale_games_for_epic_store_games -> getgamesbycategory_for_unigamer_api -> search_on_sale_games_for_epic_store_games,1.0,1.0,1.0,0.6667,1.0,2,4
+llm_zero_shot,104,"1 -> Call the ""products_v2_list_for_asos"" function with the correct parameters: 'offset' and 'limit'. -> searchfollowers_for_instagram_v6 -> transfermarkt_search_for_theclique -> getgamedetail_for_evosis_s_game_database",0.3333,0.0,0.0,0.0,0.0,4,4
+llm_few_shot,104,get_awards_for_musicians -> get_biography_for_musicians -> get_quotes_for_musicians -> get_list_of_musicians_for_musicians,0.0,0.0,0.0,0.0,0.0,0,4
+llm_zero_shot,105,flight_for_flight_integration -> competition_data_for_soccerway_feed -> allcountries_for_rest_country_api,0.4,0.0,0.0,0.0,1.0,3,3
+llm_few_shot,105,flight_for_flight_integration -> competition_data_for_soccerway_feed -> allcountries_for_rest_country_api,0.4,0.0,0.0,0.0,1.0,3,3
+llm_zero_shot,106,get_api_key_for_gigopost -> get_session_info_for_gigopost,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,106,get_api_key_for_gigopost -> get_session_info_for_gigopost,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,107,fish_api_fishes_for_fish_species -> fish_api_group_for_fish_species -> voltox_endpoint_ocr_for_voltox_ocr -> getquestions_for_asktheworld,0.5714,1.0,1.0,0.3333,1.0,4,4
+llm_few_shot,107,fish_api_fishes_for_fish_species -> fish_api_group_for_fish_species -> fish_api_fish_name_for_fish_species -> fish_api_group_for_fish_species,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_zero_shot,108,get_all_for_countries -> getclimatescorebygps_for_rankiteo_climate_risk_assessment -> caisoprice_for_caiso -> youtube_channel_details_for_youtube_channel_details -> search_posts_for_scraptik,0.3333,0.0,0.0,0.0,1.0,5,5
+llm_few_shot,108,get_all_for_countries -> get_for_all_cities_and_capitals_for_world_factbook -> get_for_all_languages_for_world_factbook -> get_for_all_time_zones_for_world_factbook -> get_for_all_currencies_for_world_factbook,1.0,0.0,0.0,0.0,1.0,1,5
+llm_zero_shot,109,jokes_random_for_chuck_norris -> listquotes_for_currency_exchange -> exchange_for_currency_exchange -> jokes_random_for_chuck_norris,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_few_shot,109,jokes_random_for_chuck_norris -> jokes_random_for_chuck_norris -> listquotes_for_currency_exchange -> exchange_for_currency_exchange,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_zero_shot,110,search_for_french_vehicle_license_plate_api -> house_prices_estimate_for_zoopla_v2 -> properties_get_running_costs_for_zoopla_v2,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,110,search_for_french_vehicle_license_plate_api -> house_prices_estimate_for_zoopla_v2 -> properties_get_running_costs_for_zoopla_v2,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,111,user_for_fake_users -> get_user_by_gender_for_fake_users -> languages_for_long_translator -> currencies_for_geodb_cities -> advance_for_cleantalk,0.5714,1.0,1.0,0.5,1.0,5,5
+llm_few_shot,111,get_user_by_gender_for_fake_users -> get_user_by_gender_for_fake_users -> get_user_by_gender_for_fake_users -> get_user_by_gender_for_fake_users -> advance_for_cleantalk,0.5,0.0,0.0,0.0,0.0,2,5
+llm_zero_shot,112,exchange_for_currency_exchange -> listquotes_for_currency_exchange,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,112,exchange_for_currency_exchange -> listquotes_for_currency_exchange,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,113,autocomplete_cities_for_autocomplete_india -> autocomplete_localities_for_autocomplete_india -> autocomplete_pincodes_for_autocomplete_india,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,113,autocomplete_cities_for_autocomplete_india -> autocomplete_localities_for_autocomplete_india -> autocomplete_pincodes_for_autocomplete_india,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,114,get_route_for_spatialscale_route_engine -> get_isochrone_for_spatialscale_route_engine,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,114,get_route_for_spatialscale_route_engine -> get_isochrone_for_spatialscale_route_engine,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,115,heroes_list_for_dota2_heroes -> search_on_sale_games_for_epic_store_games -> getdownloadurl_for_microsoft_edge_text_to_speech -> heroes_list_for_dota2_heroes,0.8,1.0,1.0,0.6667,1.0,3,4
+llm_few_shot,115,heroes_list_for_dota2_heroes -> search_on_sale_games_for_epic_store_games,1.0,1.0,1.0,0.6667,1.0,2,4
+llm_zero_shot,116,get_all_latest_news_for_sri_lanka_news_api -> get_characters_for_optitalk -> welcome_for_nft_api_news,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,116,get_all_latest_news_for_sri_lanka_news_api -> welcome_for_nft_api_news -> get_characters_for_optitalk,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,117,historical_for_exchange_rates_api -> latest_for_exchange_rates_api,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,117,latest_for_exchange_rates_api -> historical_for_exchange_rates_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,118,genre_for_deezer -> search_for_soundcloud -> get_all_details_for_youtube_video_stream_download,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,118,genre_for_deezer -> search_for_soundcloud -> get_all_details_for_youtube_video_stream_download,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,119,exchange_for_currency_exchange -> get_math_fact_for_numbers -> exchange_for_currency_exchange,0.8,1.0,1.0,0.5,0.0,2,3
+llm_few_shot,119,exchange_for_currency_exchange -> get_math_fact_for_numbers,0.8,1.0,1.0,0.5,0.0,2,3
+llm_zero_shot,120,v1_memes_for_programming_memes_images -> random_for_manatee_jokes,1.0,0.0,-1.0,0.5,1.0,2,5
+llm_few_shot,120,v1_memes_for_programming_memes_images -> random_for_manatee_jokes,1.0,0.0,-1.0,0.5,1.0,2,5
+llm_zero_shot,121,progress_for_omniinfer -> get_list_of_voices_for_text_to_speech_pro -> my_images_for_arimagesynthesizer -> statusforemissionreductiontarget_for_carbon_management,0.8889,1.0,1.0,0.75,1.0,4,5
+llm_few_shot,121,progress_for_omniinfer -> get_list_of_voices_for_text_to_speech_pro -> my_images_for_arimagesynthesizer -> statusforemissionreductiontarget_for_carbon_management,0.8889,1.0,1.0,0.75,1.0,4,5
+llm_zero_shot,122,caiso_for_caiso -> caisonode_for_caiso -> get_time_series_data_for_quandl,0.6667,1.0,1.0,0.5,1.0,3,3
+llm_few_shot,122,caiso_for_caiso -> caisonode_for_caiso -> get_time_series_data_for_quandl,0.6667,1.0,1.0,0.5,1.0,3,3
+llm_zero_shot,123,hosts_txt_for_stopmodreposts_blocklist -> yaml_for_stopmodreposts_blocklist -> json_for_stopmodreposts_blocklist -> xml_for_stopmodreposts_blocklist -> txt_for_stopmodreposts_blocklist,1.0,0.3,-0.4,0.5,0.0,5,5
+llm_few_shot,123,hosts_txt_for_stopmodreposts_blocklist -> yaml_for_stopmodreposts_blocklist -> json_for_stopmodreposts_blocklist -> xml_for_stopmodreposts_blocklist,0.8889,0.5,0.0,0.5,0.0,4,5
+llm_zero_shot,124,user_info_for_tiktok_bulletproof -> places_list_by_radius_nearby_search_for_places,0.6667,0.0,0.0,0.0,1.0,2,2
+llm_few_shot,124,user_info_for_tiktok_bulletproof -> get_feed_items_for_tiktok,1.0,0.0,0.0,0.0,1.0,1,2
+llm_zero_shot,125,news_list_for_trading_view -> short_ticker_for_global_ethereum_price_index_gex -> user_for_instagram_downloader,0.8,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,125,news_list_for_trading_view -> short_ticker_for_global_ethereum_price_index_gex -> user_for_instagram_downloader,0.8,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,126,matches_for_admiralbet -> odds_for_admiralbet -> an_premier_league_standings_for_russian_premier_league_standings,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,126,matches_for_admiralbet -> odds_for_admiralbet -> an_premier_league_standings_for_russian_premier_league_standings,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,127,"Calling the ""get_message_by_id_for_smsto"" function -> Calling the ""Finish"" function -> I will check if there are any other available tools or APIs that can provide message details with the given message ID.",0.5,0.0,0.0,0.0,0.0,1,3
+llm_few_shot,127,"Calling the ""get_message_by_id_for_smsto"" function -> Calling the ""Finish"" function -> I will check if there are any other available tools or APIs that can provide message details with the given message ID.",0.5,0.0,0.0,0.0,0.0,1,3
+llm_zero_shot,128,simple_pv_power_forecast_for_solcast -> by_postal_code_for_ambee_air_quality -> articles_for_spaceflight_news -> getpeople_for_a_i_smartable,0.5,1.0,1.0,0.3333,1.0,4,4
+llm_few_shot,128,simple_pv_power_forecast_for_solcast -> by_postal_code_for_ambee_air_quality -> get_reliable_solar_panel_installation_company_for_miami,0.6667,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,129,province_for_provinces_of_thailand -> district_for_provinces_of_thailand,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,129,province_for_provinces_of_thailand -> district_for_provinces_of_thailand,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,130,get_poster_for_outking -> latest_outcome_for_immersiverouletteapi -> get_poster_for_outking,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,130,get_poster_for_outking -> get_stream_url_for_youtube_video_stream_download -> latest_outcome_for_immersiverouletteapi,0.8,1.0,1.0,0.5,1.0,3,3
+llm_zero_shot,131,get_sentence_for_pipotronic -> get_wisdom_quotes_by_page_for_wisdom_quotes,1.0,1.0,1.0,0.6667,1.0,2,4
+llm_few_shot,131,get_sentence_for_pipotronic -> get_wisdom_quotes_by_page_for_wisdom_quotes -> get_wisdom_quotes_by_page_for_wisdom_quotes,1.0,1.0,1.0,0.6667,1.0,2,4
+llm_zero_shot,132,next_31_days_for_show_air_dates -> tomorrow_for_show_air_dates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,132,next_31_days_for_show_air_dates -> tomorrow_for_show_air_dates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,133,get_all_games_for_free_nba -> get_a_specific_game_for_free_nba -> jokes_random_for_chuck_norris -> health_for_bps,0.8571,0.6667,0.3333,0.3333,1.0,4,4
+llm_few_shot,133,get_all_games_for_free_nba -> get_a_specific_game_for_free_nba -> jokes_random_for_chuck_norris -> get_a_specific_game_for_free_nba,1.0,0.6667,0.3333,0.3333,1.0,3,4
+llm_zero_shot,134,image_search_for_bing_image_search -> suggestions_for_bing_autosuggest -> supported_countries_for_bing_web_search -> trending_for_bing_image_search,1.0,0.3333,-0.3333,0.3333,0.0,4,4
+llm_few_shot,134,image_search_for_bing_image_search -> suggestions_for_bing_autosuggest -> supported_countries_for_bing_web_search -> supported_languages_for_bing_web_search,0.8571,0.6667,0.3333,0.3333,0.0,3,4
+llm_zero_shot,135,code_for_you_for_code_for_you -> categories_for_rugbyapi2,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,135,code_for_you_for_code_for_you -> categories_for_rugbyapi2,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,136,get_current_version_for_liquor_recognition -> get_exchanges_for_coinranking,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,136,get_current_version_for_liquor_recognition -> get_labeled_image_for_liquor_recognition,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,137,eff_diceware_for_mad_libs_diceware -> getmsgs_for_messages -> time_for_pubnub_network,0.8,1.0,1.0,0.5,0.0,3,3
+llm_few_shot,137,time_for_pubnub_network -> getmsgs_for_messages -> search_by_keyword_for_ikea_api,0.8,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,138,get_for_e_commerce_delivery_status -> p_30_of_github_repos_based_on_a_query_for_leo_github_api_scraper,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,138,get_for_e_commerce_delivery_status -> p_30_of_github_repos_based_on_a_query_for_leo_github_api_scraper,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,139,get_articles_for_climate_news_feed -> get_all_publications_for_climate_news_feed -> article_page_for_climate_news_feed,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,139,get_articles_for_climate_news_feed -> get_all_publications_for_climate_news_feed -> get_articles_for_climate_news_feed,0.8,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,140,country_specific_country_for_africa_api -> province_state_county_percountry_for_africa_api -> get_the_account_for_alpaca_trading,0.8,1.0,1.0,0.5,0.0,3,3
+llm_few_shot,140,province_state_county_for_africa_api -> province_state_county_percountry_for_africa_api -> country_specific_country_for_africa_api,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,141,query_for_city_boundary_by_name_for_de_boundaries_io -> map_for_mapfanapi_map -> province_for_canadian_gas_prices -> query_for_city_boundary_by_name_for_de_boundaries_io,0.6667,0.0,0.0,0.0,1.0,2,4
+llm_few_shot,141,city_boundaries_for_de_boundaries_io -> query_for_city_boundary_by_name_for_de_boundaries_io -> city_boundaries_for_de_boundaries_io -> province_for_canadian_gas_prices,0.6667,0.0,0.0,0.0,1.0,2,4
+llm_zero_shot,142,languages_for_speech_recognition -> sourcingresume_for_screening_and_matching_resumes,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,142,languages_for_speech_recognition -> sourcingresume_for_screening_and_matching_resumes,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,143,significant_earthquakes_past_day_for_everyearthquake -> getpetbyid_for_thisisapublicapi_v2 -> significant_earthquakes_past_hour_for_everyearthquake -> _name_for_company_consultation_reportero_industrial_mexicano_api,0.5,1.0,1.0,0.3333,1.0,4,4
+llm_few_shot,143,significant_earthquakes_past_day_for_everyearthquake -> get_magnitude_of_significant_earthquakes_for_everyearthquake -> significant_earthquakes_past_hour_for_everyearthquake -> suggest_explore_alternative_sources_for_everyearthquake,0.6667,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,144,get_watches_by_brand_family_model_for_watch_database -> get_all_family_by_brand_name_for_watch_database -> retrieve_all_offers_v2_for_opensea_data_query -> daily_phrase_for_horoscope_astrology,0.5714,1.0,1.0,0.0,1.0,4,4
+llm_few_shot,144,get_watches_by_brand_family_model_for_watch_database -> get_all_family_by_brand_name_for_watch_database -> get_user_for_tiktok_private -> random_joke_for_joke_test,0.8571,0.6667,0.3333,0.0,1.0,4,4
+llm_zero_shot,145,veiculo_tipo_id_marca_for_veiculos_api -> veiculo_tipo_id_marca_id_modelo_for_veiculos_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,145,veiculo_tipo_id_marca_for_veiculos_api -> veiculo_tipo_id_marca_id_modelo_for_veiculos_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,146,news_get_market_update_for_schwab -> quote_get_option_chains_for_schwab -> sectors_movers_list_for_palmy_investing_api,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_few_shot,146,news_get_market_update_for_schwab -> quote_get_option_chains_for_schwab -> sectors_movers_list_for_palmy_investing_api,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_zero_shot,147,breed_type_for_dogbreeddb -> get_all_kfc_locations_by_state_for_kfc_locations -> search_books_by_name_for_hapi_books -> breed_type_for_dogbreeddb,0.5714,1.0,1.0,0.0,1.0,3,4
+llm_few_shot,147,breed_type_for_dogbreeddb -> get_all_kfc_locations_by_state_for_kfc_locations -> breed_type_for_dogbreeddb -> get_all_city_names_for_kfc_locations,0.8571,1.0,1.0,0.3333,1.0,3,4
+llm_zero_shot,148,api_nutrition_data_for_edamam_nutrition_analysis -> fueltoco2e_for_carbonfootprint,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,148,api_nutrition_data_for_edamam_nutrition_analysis -> fueltoco2e_for_carbonfootprint,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,149,raiderio_call_for_raider_io -> leaguelastmatches_for_americanfootballapi -> match_history_for_dota_2_steam_web,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,149,raiderio_call_for_raider_io -> leaguelastmatches_for_americanfootballapi -> match_history_for_dota_2_steam_web,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,150,model_detection_for_tesla_vin_identifier -> vin_detection_for_tesla_vin_identifier -> manufacturing_location_detection_for_tesla_vin_identifier -> manufacturing_year_detection_for_tesla_vin_identifier,1.0,0.5,0.0,0.0,0.0,4,4
+llm_few_shot,150,manufacturing_location_detection_for_tesla_vin_identifier -> model_detection_for_tesla_vin_identifier -> manufacturing_year_detection_for_tesla_vin_identifier -> vin_detection_for_tesla_vin_identifier,1.0,1.0,1.0,1.0,1.0,4,4
+llm_zero_shot,151,get_id_for_fastingcenters -> get_all_fastingcenters_for_fastingcenters,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,151,get_id_for_fastingcenters -> get_all_fastingcenters_for_fastingcenters,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,152,v1_memes_for_programming_memes_images -> today_s_wordle_for_wordle_today -> history_for_lightningroulletteapi,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,152,trending_games_for_all_in_one_crypto_swiss_knife -> v1_memes_for_programming_memes_images -> today_s_wordle_for_wordle_today -> history_for_lightningroulletteapi,0.6667,1.0,1.0,0.5,0.0,3,3
+llm_zero_shot,153,getbookcoverimage_for_book_cover_api -> getbookcoverurl_for_book_cover_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,153,getbookcoverimage_for_book_cover_api -> getbookcoverurl_for_book_cover_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,154,all_ticker_data_for_global_ethereum_price_index_gex -> get_cosmos_balance_for_cryptocurrency_balance -> short_ticker_for_global_ethereum_price_index_gex -> get_meta_data_for_investing_cryptocurrency_markets,0.8571,0.6667,0.3333,0.6667,1.0,4,4
+llm_few_shot,154,all_ticker_data_for_global_ethereum_price_index_gex -> get_cosmos_balance_for_cryptocurrency_balance -> short_ticker_for_global_ethereum_price_index_gex -> all_ticker_data_for_global_ethereum_price_index_gex,1.0,0.6667,0.3333,0.6667,1.0,3,4
+llm_zero_shot,155,double_name_short_for_nameforge -> get_news_for_epic_games_store -> search_for_american_company_business_data -> apgar_for_clinicalmarkers,0.5,1.0,1.0,0.3333,1.0,4,4
+llm_few_shot,155,double_name_short_for_nameforge -> get_news_for_epic_games_store -> double_name_short_for_nameforge -> get_news_for_epic_games_store,0.6667,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,156,search_business_locations_for_local_rank_tracker -> search_country_by_name_for_location_and_time -> ranking_at_coordinate_point_for_local_rank_tracker -> states_for_referential_db -> profile_data_for_linkedin_profile_data,0.5714,1.0,1.0,0.25,1.0,5,5
+llm_few_shot,156,search_business_locations_for_local_rank_tracker -> ranking_at_coordinate_point_for_local_rank_tracker -> search_business_locations_for_local_rank_tracker -> ranking_at_coordinate_point_for_local_rank_tracker -> states_for_referential_db,0.8,1.0,1.0,0.25,1.0,3,5
+llm_zero_shot,157,orical_exchange_rates_for_currency_conversion_and_exchange_rates -> orical_exchange_rates_for_currency_conversion_and_exchange_rates,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,157,orical_exchange_rates_for_currency_conversion_and_exchange_rates -> orical_exchange_rates_for_currency_conversion_and_exchange_rates,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,158,get_san_francisco_chronicle_news_for_news_in_bay -> get_channel_panels_for_twitch_api -> get_channel_points_context_for_twitch_api,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,158,get_san_francisco_chronicle_news_for_news_in_bay -> get_channel_panels_for_twitch_api -> get_channel_points_context_for_twitch_api,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,159,search_destination_for_airbnb_v2 -> accept_charset_for_testing_out_sharing_w_rachael -> get_username_valorant_for_id_game_checker,0.5,0.0,0.0,0.0,1.0,2,3
+llm_few_shot,159,get_last_name_for_customer -> accept_charset_for_testing_out_sharing_w_rachael,0.6667,0.0,0.0,0.0,1.0,1,3
+llm_zero_shot,160,generate_wallet_for_webit_blockchain -> get_latest_current_block_for_webit_blockchain -> estimate_gas_for_webit_blockchain,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,160,generate_wallet_for_webit_blockchain -> get_latest_current_block_for_webit_blockchain -> estimate_gas_for_webit_blockchain,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,161,api_nutrition_data_for_edamam_nutrition_analysis -> all_for_getguidelines -> api_nutrition_data_for_edamam_nutrition_analysis,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_few_shot,161,api_nutrition_data_for_edamam_nutrition_analysis -> all_for_getguidelines -> business_details_for_local_business_data,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,162,api_dns_for_retrieve_dns_entries -> api_whois_for_retrieve_dns_entries -> api_schema_for_retrieve_dns_entries -> api_whois_for_retrieve_dns_entries,1.0,0.3333,-0.3333,0.3333,0.0,3,4
+llm_few_shot,162,api_dns_for_retrieve_dns_entries -> api_whois_for_retrieve_dns_entries -> api_schema_for_retrieve_dns_entries -> api_dns_for_retrieve_dns_entries,1.0,0.3333,-0.3333,0.3333,0.0,3,4
+llm_zero_shot,163,trending_memes_for_reddit_meme -> top_posts_by_subreddit_for_reddit -> top_posts_by_username_for_reddit,0.8571,0.3333,-0.3333,0.3333,0.0,3,4
+llm_few_shot,163,trending_memes_for_reddit_meme -> top_posts_by_subreddit_for_reddit -> top_posts_by_username_for_reddit,0.8571,0.3333,-0.3333,0.3333,0.0,3,4
+llm_zero_shot,164,trending_memes_for_reddit_meme -> posts_by_username_for_reddit -> popular_posts_for_reddit,0.8571,1.0,1.0,0.25,1.0,3,5
+llm_few_shot,164,trending_memes_for_reddit_meme -> posts_by_username_for_reddit,0.6667,1.0,1.0,0.25,1.0,2,5
+llm_zero_shot,165,categories_list_for_amazon_data_v2 -> marketplace_list_for_amazon_data_v2,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,165,categories_list_for_amazon_data_v2 -> marketplace_list_for_amazon_data_v2,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,166,get_sentence_for_pipotronic -> om_twitter_video_downloader_api_for_twitter_video_downloader_mp4 -> get_sentence_for_pipotronic,0.8,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,166,get_sentence_for_pipotronic -> om_twitter_video_downloader_api_for_twitter_video_downloader_mp4 -> get_sentence_for_pipotronic,0.8,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,167,list_of_cocktails_for_the_cocktail_db_v2 -> detailed_cocktail_recipe_by_id_for_the_cocktail_db_v2 -> charts_track_for_shazam,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,167,list_of_cocktails_for_the_cocktail_db_v2 -> detailed_cocktail_recipe_by_id_for_the_cocktail_db_v2 -> charts_track_for_shazam,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,168,get_verses_for_bible_memory_verse_flashcard -> rch_for_verses_containing_terms_for_bible_memory_verse_flashcard -> get_verses_for_bible_memory_verse_flashcard,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_few_shot,168,get_verses_for_bible_memory_verse_flashcard -> rch_for_verses_containing_terms_for_bible_memory_verse_flashcard -> get_verses_for_bible_memory_verse_flashcard,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_zero_shot,169,api_v1_beyblades_for_beyblade_api -> today_for_show_air_dates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,169,api_v1_beyblades_for_beyblade_api -> today_for_show_air_dates,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,170,list_of_available_languages_for_translef_translator -> get_order_for_rushtranslate,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,170,get_order_for_rushtranslate -> list_of_available_languages_for_translef_translator,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,171,1. example_for_veriphone -> 2. verify_for_veriphone -> 3. weather_forecast_data_for_visual_crossing_weather -> 4. social_media_caption_for_social_media_caption,0.75,1.0,1.0,0.6667,1.0,4,4
+llm_few_shot,171,verify_for_veriphone -> weather_forecast_data_for_visual_crossing_weather -> gettopics_for_election2020_smartable,0.5714,1.0,1.0,0.3333,0.0,3,4
+llm_zero_shot,172,v1_holidays_for_holidays_by_api_ninjas -> all_belgian_races_for_wonderboyapi,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,172,v1_holidays_for_holidays_by_api_ninjas -> all_belgian_races_for_wonderboyapi,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,173,search_for_youtube_v3_lite -> thai4_for_thailand -> camlist_for_tsaboin_cams -> properties_get_hotel_photos_deprecated_for_hotels,1.0,0.6667,0.3333,0.3333,0.0,3,4
+llm_few_shot,173,thai4_for_thailand -> properties_get_hotel_photos_deprecated_for_hotels -> camlist_for_tsaboin_cams,1.0,0.3333,-0.3333,0.3333,0.0,3,4
+llm_zero_shot,174,top_nfts_today_for_top_nft_sales -> top_collections_this_month_for_top_nft_sales,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,174,top_nfts_today_for_top_nft_sales -> top_collections_this_month_for_top_nft_sales,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,175,matches_for_admiralbet -> odds_for_admiralbet,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,175,matches_for_admiralbet -> odds_for_admiralbet,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,176,geocode_v1_json_for_opencage_geocoder -> getnearestcities_for_reverse_geocoding_and_geolocation_service -> channel_shorts_for_youtube_v2,0.8,1.0,1.0,0.5,1.0,3,3
+llm_few_shot,176,geocode_v1_json_for_opencage_geocoder -> getnearestcities_for_reverse_geocoding_and_geolocation_service -> channel_shorts_for_youtube_v2,0.8,1.0,1.0,0.5,1.0,3,3
+llm_zero_shot,177,1 -> 7 -> 12 -> 9 -> 6,0.0,0.0,0.0,0.0,0.0,0,5
+llm_few_shot,177,calendars_get_earning_calendar_for_trading_view -> history_for_currencyapi_net -> ideas_get_replies_for_trading_view -> getprices_for_crypto_and_forex_rates -> use_a_search_engine_or_travel_websites_to_find_reliable_travel_websites_for_booking_flights_and_accommodations,0.2857,0.0,0.0,0.0,0.0,2,5
+llm_zero_shot,178,movie_data_by_id_for_imdb_top_100_movies -> top_100_movies_list_for_imdb_top_100_movies -> comment_for_deezer -> movie_data_by_id_for_imdb_top_100_movies,1.0,0.3333,-0.3333,0.3333,0.0,3,4
+llm_few_shot,178,movie_data_by_id_for_imdb_top_100_movies -> top_100_movies_list_for_imdb_top_100_movies -> comment_for_deezer -> movie_data_by_id_for_imdb_top_100_movies,1.0,0.3333,-0.3333,0.3333,0.0,3,4
+llm_zero_shot,179,1 -> call_the_hotels_dynamic_for_zumata -> wrt_transformer_for_walnut_topic -> dad_jokes_health_for_dad_jokes_v2,0.4,0.0,0.0,0.0,0.0,2,4
+llm_few_shot,179,1. check_for_cleantalk -> dad_jokes_health_for_dad_jokes_v2 -> wrt_transformer_for_walnut_topic -> advance_for_cleantalk,0.8571,1.0,1.0,0.6667,1.0,4,4
+llm_zero_shot,180,matchschedules_for_icehockeyapi -> leaguedetails_for_icehockeyapi -> leagueregularseasontopplayers_for_icehockeyapi -> livematches_for_icehockeyapi -> matchschedules_for_icehockeyapi,1.0,1.0,1.0,0.75,1.0,4,5
+llm_few_shot,180,matchschedules_for_icehockeyapi -> leaguedetails_for_icehockeyapi -> leagueregularseasontopplayers_for_icehockeyapi,0.8571,1.0,1.0,0.5,1.0,3,5
+llm_zero_shot,181,get_half_staff_events_for_given_flag_for_flag_status -> get_all_half_staff_events_for_every_flag_for_flag_status,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,181,get_half_staff_events_for_given_flag_for_flag_status -> get_all_half_staff_events_for_every_flag_for_flag_status,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,182,historic_views_and_subscribers_for_historical_youtube_data -> get_user_by_gender_for_fake_users -> getuser_for_auth,0.8,1.0,1.0,0.5,1.0,3,3
+llm_few_shot,182,historic_views_and_subscribers_for_historical_youtube_data -> get_user_by_gender_for_fake_users,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,183,game_list_for_lotto_draw_results_global -> get_draw_result_for_lotto_draw_results_global -> status_for_jobtitle,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_few_shot,183,game_list_for_lotto_draw_results_global -> get_draw_result_for_lotto_draw_results_global -> status_for_jobtitle,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_zero_shot,184,getbookcoverimage_for_book_cover_api -> general_search_for_crypto_news_v2 -> get_all_crypto_news_for_crypto_news_v2 -> get_next_predictions_for_predictx,0.75,1.0,1.0,0.3333,1.0,4,4
+llm_few_shot,184,getbookcoverimage_for_book_cover_api -> get_all_crypto_news_for_crypto_news_v2 -> general_search_for_crypto_news_v2 -> get_all_crypto_news_for_crypto_news_v2,0.8571,0.6667,0.3333,0.0,1.0,3,4
+llm_zero_shot,185,get_jokes_for_world_of_jokes -> get_categories_of_jokes_for_world_of_jokes -> get_joke_of_the_day_for_world_of_jokes,1.0,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,185,get_jokes_for_world_of_jokes -> get_joke_of_the_day_for_world_of_jokes -> get_categories_of_jokes_for_world_of_jokes,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_zero_shot,186,get_profiles_for_matrimony_profiles -> parse_for_url_metadata_opengraph,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,186,get_profiles_for_matrimony_profiles -> parse_for_url_metadata_opengraph,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,187,ange_currency_and_show_thier_countries_for_currency_converter_v5 -> get_commodities_for_investing,0.6667,0.0,0.0,0.0,1.0,2,2
+llm_few_shot,187,ange_currency_and_show_thier_countries_for_currency_converter_v5 -> get_commodities_for_investing,0.6667,0.0,0.0,0.0,1.0,2,2
+llm_zero_shot,188,1 -> 10 -> 8 -> 3,0.0,0.0,0.0,0.0,0.0,0,4
+llm_few_shot,188,home_team_league_stats_for_football_prediction -> head_to_head_for_football_prediction -> get_all_restaurant_locations_for_restaurants_near_me_usa -> home_team_league_stats_for_football_prediction,0.8,1.0,1.0,0.3333,0.0,2,4
+llm_zero_shot,189,getpublictenantconfig_for_auth -> v1_nutrition_for_nutrition_by_api_ninjas,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,189,getpublictenantconfig_for_auth -> v1_nutrition_for_nutrition_by_api_ninjas,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,190,basic_search_for_kubric_the_comprehensive_movie_news_api -> get_history_for_web_image_storage -> labs_for_lab -> get_for_simple_file_storage,0.75,0.3333,-0.3333,0.3333,0.0,4,4
+llm_few_shot,190,get_programming_challenges_for_leetcode -> get_code_snippets_for_leetcode -> upload_file_for_simple_file_storage -> get_for_simple_file_storage,0.4,0.0,0.0,0.0,0.0,1,4
+llm_zero_shot,191,get_individual_bank_for_exchange_rates_live -> get_time_zone_for_countries -> facilities_lookup_for_nigeria_api,0.5,0.0,0.0,0.0,1.0,3,3
+llm_few_shot,191,get_exchange_rates_for_european_central_bank -> get_exchange_rates_for_denmark_national_bank -> get_exchange_rates_for_european_central_bank_usd_base,0.0,0.0,0.0,0.0,0.0,0,3
+llm_zero_shot,192,schoolcode_for_dcps_project -> get_all_locations_for_tdot_school_data,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,192,schoolcode_for_dcps_project -> get_all_locations_for_tdot_school_data,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,193,v1_planets_for_planets_by_api_ninjas -> nitrous_endpoint_for_atmosphere_nitrous_oxide_levels,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,193,v1_planets_for_planets_by_api_ninjas -> nitrous_endpoint_for_atmosphere_nitrous_oxide_levels,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,194,convert_for_currency_converter_v2 -> get_bank_info_for_routing_number_bank_lookup,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,194,convert_for_currency_converter_v2 -> get_bank_info_for_routing_number_bank_lookup,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,195,languages_for_free_stopwords -> proxy_requests_for_ssh_honeypot,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,195,languages_for_free_stopwords -> proxy_requests_for_ssh_honeypot,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,196,get_followers_by_username_for_instagram_profile -> get_following_by_username_for_instagram_profile -> get_searchuser_for_instagram_profile -> get_language_for_countries_v2,0.75,0.3333,-0.3333,0.3333,0.0,4,4
+llm_few_shot,196,get_following_by_username_for_instagram_profile -> get_followers_by_username_for_instagram_profile -> get_searchuser_for_instagram_profile -> get_searchuser_for_instagram_profile,0.8571,0.0,-1.0,0.0,0.0,3,4
+llm_zero_shot,197,email_marketing_for_lake_b2b -> all_for_getguidelines -> get_list_of_currency_exchanges_copy_copy_for_currencygenie -> Finish,0.6667,1.0,1.0,0.3333,1.0,3,4
+llm_few_shot,197,email_marketing_for_lake_b2b -> all_for_getguidelines -> get_list_of_currency_exchanges_copy_copy_for_currencygenie -> finish,0.6667,1.0,1.0,0.3333,1.0,3,4
+llm_zero_shot,198,latest_coupons_for_get_27coupons -> trending_coupons_for_get_27coupons -> popular_coupons_for_get_27coupons,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,198,latest_coupons_for_get_27coupons -> trending_coupons_for_get_27coupons -> popular_coupons_for_get_27coupons,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,199,matches_for_bildbet -> odds_for_bildbet -> getteam_for_boldsign -> leagueregularseasontopplayers_for_icehockeyapi -> differentiate_for_mathematical_symbolic_expression_manipulator,0.5714,1.0,1.0,0.5,0.0,5,5
+llm_few_shot,199,matches_for_bildbet -> odds_for_bildbet -> leagueregularseasontopplayers_for_icehockeyapi -> getteam_for_boldsign -> cash_flow_statement_for_finshorts,0.5714,1.0,1.0,0.5,0.0,5,5
+llm_zero_shot,200,search_for_creators_for_patreon -> details_for_patreon -> posts_for_patreon,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,200,search_for_creators_for_patreon -> details_for_patreon -> posts_for_patreon,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,201,"stickers_trending_for_mojitok_sticker_store_sdk -> trending_gifs_for_giphy -> Suggest the game of ""Yahtzee"" as a fun and engaging dice game for the team-building event.",1.0,0.0,-1.0,0.5,1.0,2,3
+llm_few_shot,201,stickers_trending_for_mojitok_sticker_store_sdk -> trending_gifs_for_giphy,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,202,get_math_fact_for_numbers -> jokes_categories_for_chuck_norris,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,202,get_math_fact_for_numbers -> jokes_categories_for_chuck_norris,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,203,v1_mortgagecalculator_for_mortgage_calculator_by_api_ninjas -> v1_inflation_for_inflation_by_api_ninjas,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_few_shot,203,v1_mortgagecalculator_for_mortgage_calculator_by_api_ninjas -> v1_inflation_for_inflation_by_api_ninjas,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,204,domain_data_for_website_analyze_and_seo_audit_pro -> loading_speed_data_for_website_analyze_and_seo_audit_pro -> onpage_seo_analyze_for_website_analyze_and_seo_audit_pro,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,204,domain_data_for_website_analyze_and_seo_audit_pro -> loading_speed_data_for_website_analyze_and_seo_audit_pro -> onpage_seo_analyze_for_website_analyze_and_seo_audit_pro,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,205,get_products_for_onboarding_project -> get_products_in_category_for_onboarding_project -> get_products_in_category_for_onboarding_project -> me_for_onboarding_project -> get_products_in_category_for_onboarding_project,0.0,0.0,0.0,0.0,0.0,0,5
+llm_few_shot,205,get_products_in_category_for_onboarding_project -> get_products_for_onboarding_project -> get_products_for_onboarding_project -> get_products_by_id_for_onboarding_project -> me_for_onboarding_project,0.0,0.0,0.0,0.0,0.0,0,5
+llm_zero_shot,206,flame_for_flames_love_calculator -> v1_memes_for_programming_memes_images,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,206,flame_for_flames_love_calculator -> v1_memes_for_programming_memes_images,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,207,get_mark_price_kline_for_bybit -> get_mark_price_kline_for_bybit -> open_interest_for_bybit -> latest_information_for_symbol_for_bybit,1.0,0.6667,0.3333,0.3333,1.0,3,4
+llm_few_shot,207,get_mark_price_kline_for_bybit -> get_mark_price_kline_for_bybit -> open_interest_for_bybit -> latest_information_for_symbol_for_bybit,1.0,0.6667,0.3333,0.3333,1.0,3,4
+llm_zero_shot,208,getting_data_for_data_visualisation -> get_all_certifications_for_top_2023_it_certifications -> weather_for_weather_v3,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_few_shot,208,getting_data_for_data_visualisation -> getting_data_for_data_visualisation -> get_all_certifications_for_top_2023_it_certifications,0.8,1.0,1.0,0.0,1.0,2,3
+llm_zero_shot,209,get_player_by_id_for_shescoresapi -> get_players_by_country_for_shescoresapi -> team_performance_indices_for_metrx_factory,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,209,get_player_by_id_for_shescoresapi -> get_players_by_country_for_shescoresapi -> team_performance_indices_for_metrx_factory,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,210,1. list_all_api_for_testing_for_my_use -> metrics_for_testing_for_my_use -> versions_for_darko_androcec_example -> financial_income_statement_for_macrotrends_finance,0.6667,1.0,1.0,0.3333,1.0,4,4
+llm_few_shot,210,list_all_api_for_testing_for_my_use -> list_of_apis_for_the_api_usage_db -> metrics_for_testing_for_my_use -> versions_for_darko_androcec_example,0.8,1.0,1.0,0.3333,1.0,3,4
+llm_zero_shot,211,v4_sports_for_live_sports_odds -> v4_sports_sport_odds_for_live_sports_odds -> v4_sports_sport_odds_for_live_sports -> v4_sports_sport_scores_for_live_sports_odds,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_few_shot,211,v4_sports_for_live_sports_odds -> v4_sports_sport_odds_for_live_sports_odds -> v4_sports_sport_scores_for_live_sports_odds -> get_call_for_udyam_aadhaar_verification,0.8571,1.0,1.0,0.6667,1.0,4,4
+llm_zero_shot,212,getallsearches_for_youtube_influencer_search -> check_text_for_ai_detection -> getallsearches_for_youtube_influencer_search,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,212,getallsearches_for_youtube_influencer_search -> check_text_for_ai_detection -> getallsearches_for_youtube_influencer_search,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,213,search_for_playlists_for_youtube_media_downloader -> list_video_comments_for_youtube_media_downloader -> hotspot_for_indonesia_hotspot_and_fire_location_data -> get_locations_for_septa -> get_stored_word_from_any_category_for_taboo_api,0.75,1.0,1.0,0.75,1.0,5,5
+llm_few_shot,213,search_for_playlists_for_youtube_media_downloader -> list_video_comments_for_youtube_media_downloader -> hotspot_for_indonesia_hotspot_and_fire_location_data -> get_locations_for_septa -> hid_for_instagram_downloader,0.75,1.0,1.0,0.75,1.0,5,5
+llm_zero_shot,214,list_all_countries_for_world_bank_gdp -> mfs_family_list_for_twelve_data,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,214,list_all_countries_for_world_bank_gdp -> mfs_family_list_for_twelve_data,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,215,search_for_soundcloud -> editorial_for_deezer -> search_for_soundcloud,1.0,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,215,search_for_soundcloud -> search_for_soundcloud -> editorial_for_deezer,1.0,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,216,carbonfootprintfromcartravel_for_carbonfootprint -> carbonfootprintfrompublictransit_for_carbonfootprint -> treeequivalent_for_carbonfootprint,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,216,carbonfootprintfromcartravel_for_carbonfootprint -> carbonfootprintfrompublictransit_for_carbonfootprint -> treeequivalent_for_carbonfootprint,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,217,search_for_getbooksinfo -> gettalks_for_ted_talks_api -> browserobject_api_for_browserobject -> getsubtitlelanguages_for_ted_talks_api,0.8571,0.3333,-0.3333,0.6667,1.0,4,4
+llm_few_shot,217,search_for_getbooksinfo -> gettalks_for_ted_talks_api -> search_for_hello_next_api,0.8,0.0,-1.0,0.3333,1.0,2,4
+llm_zero_shot,218,run_cgi_for_random_word -> download_for_uurrooster_v2,1.0,1.0,1.0,0.3333,1.0,2,4
+llm_few_shot,218,run_cgi_for_random_word -> download_for_uurrooster_v2,1.0,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,219,random_quote_for_tronald_dump -> search_quotes_for_tronald_dump,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_few_shot,219,random_quote_for_tronald_dump -> search_quotes_for_tronald_dump,1.0,0.0,-1.0,0.5,1.0,2,3
+llm_zero_shot,220,chlyricdirect_artist_michael_20jackson_song_bad_for_chart_lyrics -> list_all_platforms_for_is_this_coin_a_scam -> enumeratethedoclibsinrootsite_for_ishan,0.5,0.0,0.0,0.0,1.0,3,3
+llm_few_shot,220,chlyricdirect_artist_michael_20jackson_song_bad_for_chart_lyrics -> list_all_platforms_for_is_this_coin_a_scam -> Finish,0.6667,0.0,0.0,0.0,1.0,2,3
+llm_zero_shot,221,get_posts_from_page_for_get_9gag_api_detailed -> get_post_data_download_video_photo_for_get_9gag_api_detailed -> get_pages_for_get_9gag_api_detailed,0.8,1.0,1.0,0.5,0.0,2,3
+llm_few_shot,221,get_posts_from_page_for_get_9gag_api_detailed -> get_post_data_download_video_photo_for_get_9gag_api_detailed,0.8,1.0,1.0,0.5,0.0,2,3
+llm_zero_shot,222,locations_search_deprecated_for_hotels -> retrieve_objectives_for_drillster_2_0 -> reviews_list_deprecated_for_hotels -> livetraffic_for_adsbx_flight_sim_traffic,0.8571,1.0,1.0,0.6667,1.0,4,4
+llm_few_shot,222,locations_search_deprecated_for_hotels -> reviews_list_deprecated_for_hotels -> livetraffic_for_adsbx_flight_sim_traffic,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_zero_shot,223,1 -> get_top_coins_by_sentiment_change_for_crowdsense -> tournament_matches_by_date_for_tennis_live_data -> starting_grid_for_fia_formula_1_championship_statistics,0.6667,1.0,1.0,0.5,0.0,3,3
+llm_few_shot,223,tournament_matches_by_date_for_tennis_live_data -> starting_grid_for_fia_formula_1_championship_statistics,0.8,1.0,1.0,0.5,0.0,2,3
+llm_zero_shot,224,get_fixtures_for_hapihub -> version_metadata_for_hapihub,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,224,get_fixtures_for_hapihub -> version_metadata_for_hapihub,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,225,emailvalidation_for_check_disposable_email -> checkdisposableemail_for_check_disposable_email -> search_calls_for_hubspot_apis,0.8,0.0,-1.0,0.5,1.0,3,3
+llm_few_shot,225,checkdisposableemail_for_check_disposable_email -> emailvalidation_for_check_disposable_email,1.0,1.0,1.0,0.5,0.0,2,3
+llm_zero_shot,226,drivers_standings_for_fia_formula_1_championship_statistics -> constructors_standings_for_fia_formula_1_championship_statistics,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,226,drivers_standings_for_fia_formula_1_championship_statistics -> constructors_standings_for_fia_formula_1_championship_statistics,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,227,all_products_for_recash -> search_for_recash,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,227,all_products_for_recash -> search_for_recash,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,228,all_for_getguidelines -> api_nutrition_data_for_edamam_nutrition_analysis -> vac_for_getguidelines -> inflation_for_u_s_economic_indicators,0.75,0.3333,-0.3333,0.3333,0.0,4,4
+llm_few_shot,228,all_for_getguidelines -> api_nutrition_data_for_edamam_nutrition_analysis -> all_for_getguidelines -> api_nutrition_data_for_edamam_nutrition_analysis,0.6667,1.0,1.0,0.3333,0.0,2,4
+llm_zero_shot,229,auto_complete_deprecating_for_kohls -> products_list_for_kohls -> products_search_by_barcode_for_kohls,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_few_shot,229,auto_complete_deprecating_for_kohls -> products_list_for_kohls,0.8,1.0,1.0,0.0,1.0,2,3
+llm_zero_shot,230,get_status_for_sms77io -> get_all_players_for_free_nba,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,230,get_status_for_sms77io -> clickbank_for_clickbankuniversity,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,231,most_visited_for_cryptocurrency_markets -> newly_listed_for_cryptocurrency_markets -> top_gainers_for_cryptocurrency_markets -> top_losers_for_cryptocurrency_markets,1.0,1.0,1.0,1.0,1.0,4,4
+llm_few_shot,231,most_visited_for_cryptocurrency_markets -> newly_listed_for_cryptocurrency_markets -> top_gainers_for_cryptocurrency_markets -> top_losers_for_cryptocurrency_markets,1.0,1.0,1.0,1.0,1.0,4,4
+llm_zero_shot,232,getallcountry_for_radio_world_75_000_worldwide_fm_radio_stations -> tionbycountry_for_radio_world_75_000_worldwide_fm_radio_stations -> gethomepage_for_radio_world_75_000_worldwide_fm_radio_stations,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,232,getallcountry_for_radio_world_75_000_worldwide_fm_radio_stations -> gethomepage_for_radio_world_75_000_worldwide_fm_radio_stations -> tionbycountry_for_radio_world_75_000_worldwide_fm_radio_stations,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_zero_shot,233,get_products_for_onboarding_project -> get_car_specs_for_car_specs,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,233,get_products_for_onboarding_project -> get_car_specs_for_car_specs,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,234,v1_jokes_for_jokes_by_api_ninjas -> quote_for_quotes,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,234,v1_jokes_for_jokes_by_api_ninjas -> quote_for_quotes,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,235,getcustomeraddresses_for_appibase -> getmerchantaddress_for_appibase,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,235,getcustomeraddresses_for_appibase -> getmerchantaddress_for_appibase,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,236,webcams_list_category_category_category_for_webcams_travel -> get_news_for_ai_news_global -> search_for_shopify_stores_info,0.6667,0.0,0.0,0.0,1.0,2,3
+llm_few_shot,236,webcams_list_category_category_category_for_webcams_travel -> get_news_for_ai_news_global -> search_for_shopify_stores_info,0.6667,0.0,0.0,0.0,1.0,2,3
+llm_zero_shot,237,recipes_list_for_tasty -> getorderbyid_for_thisshouldbefree -> recipes_auto_complete_for_tasty -> find_by_title_for_movies_details,0.5714,1.0,1.0,0.3333,0.0,4,4
+llm_few_shot,237,recipes_list_for_tasty -> recipes_auto_complete_for_tasty -> getorderbyid_for_thisshouldbefree -> feeds_list_for_tasty,0.8571,0.3333,-0.3333,0.3333,0.0,4,4
+llm_zero_shot,238,get_product_for_gearbest -> search_for_gearbest -> supply_chain_for_corporate_supply_chain -> stock_key_statistics_stock_for_mboum_finance,0.8571,1.0,1.0,0.6667,0.0,4,4
+llm_few_shot,238,get_product_for_gearbest -> get_product_for_gearbest -> supply_chain_for_corporate_supply_chain -> search_for_gearbest,1.0,0.6667,0.3333,0.3333,0.0,3,4
+llm_zero_shot,239,artist_details_for_genius_song_lyrics -> carrier_endpoint_for_free_phone_carrier_lookup -> get_coins_data_for_mineable_coins,0.4,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,239,get_personalized_gift_ideas_for_amazon -> get_current_price_for_bitcoin -> search_for_amazon_products,0.0,0.0,0.0,0.0,0.0,0,3
+llm_zero_shot,240,check_movie_status_for_magisto -> get_movie_for_magisto,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,240,check_movie_status_for_magisto -> get_movie_for_magisto,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,241,"facebook_ad_copy_for_facebook_ad -> get_user_info_for_tiktok_download_video -> Call the ""Finish"" function and provide the final answer to the user.",0.3333,0.0,0.0,0.0,1.0,3,3
+llm_few_shot,241,facebook_ad_copy_for_facebook_ad -> get_user_info_for_tiktok_download_video,0.4,0.0,0.0,0.0,1.0,2,3
+llm_zero_shot,242,list_genres_for_media_group -> dad_jokes_joke_of_the_day_for_dad_jokes_v2 -> dad_jokes_random_for_dad_jokes_v2,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,242,list_genres_for_media_group -> dad_jokes_joke_of_the_day_for_dad_jokes_v2 -> dad_jokes_random_for_dad_jokes_v2,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,243,localized_routes_for_betsports -> premier_league_standings_for_premier_league_standings -> superoffer_for_betsports -> localized_routes_for_betsports,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_few_shot,243,localized_routes_for_betsports -> premier_league_standings_for_premier_league_standings -> superoffer_for_betsports,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_zero_shot,244,get_single_user_for_uers_api -> get_all_users_for_uers_api -> domain_name_for_domain_whois_lookup_api,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_few_shot,244,get_single_user_for_uers_api -> get_all_users_for_uers_api -> domain_name_for_domain_whois_lookup_api,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_zero_shot,245,getpoem_for_emotional_poem -> check_domain_info_for_domain_info -> full_information_for_domain_info -> generate_password_for_ultimate_password_generator,0.8889,1.0,1.0,0.75,1.0,4,5
+llm_few_shot,245,getpoem_for_emotional_poem -> check_domain_info_for_domain_info -> full_information_for_domain_info -> generate_password_for_ultimate_password_generator,0.8889,1.0,1.0,0.75,1.0,4,5
+llm_zero_shot,246,profile_data_for_linkedin_profile_data -> poor_backlinks_for_best_backlink_checker_api -> get_list_of_fixture_ids_for_football_prediction -> anime_for_anime_manga_and_novels_api,0.8,1.0,1.0,0.3333,1.0,3,4
+llm_few_shot,246,profile_data_for_linkedin_profile_data -> poor_backlinks_for_best_backlink_checker_api,1.0,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,247,get_team_rushing_data_for_nfl_team_stats_v2 -> get_coupons_endpoint_for_daily_betting_tips -> get_predictions_by_date_for_daily_betting_tips,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_few_shot,247,get_team_rushing_data_for_nfl_team_stats_v2 -> get_coupons_endpoint_for_daily_betting_tips -> get_calendar_components_for_today_for_enoch_calendar,0.6667,1.0,1.0,0.0,1.0,3,3
+llm_zero_shot,248,get_stats_for_world_of_tanks_stats -> get_feat_for_dungeons_and_dragon_5e -> get_call_for_icmai_verification -> ecoweather_for_ecoweather -> getprices_for_crypto_and_forex_rates,0.5714,1.0,1.0,0.25,1.0,5,5
+llm_few_shot,248,get_stats_for_world_of_tanks_stats -> get_feat_for_dungeons_and_dragon_5e,1.0,1.0,1.0,0.25,1.0,2,5
+llm_zero_shot,249,getforecastweather_for_openweather -> locations_for_skyscanner_api -> getforecastweather_for_openweather -> getforecastweather_for_openweather,1.0,0.0,0.0,0.0,1.0,1,4
+llm_few_shot,249,getforecastweather_for_openweather -> locations_for_skyscanner_api -> categories_for_hashtag -> getforecastweather_for_openweather,0.6667,0.0,0.0,0.0,1.0,2,4
+llm_zero_shot,250,gethistoricalprices_for_yahoo_finance_historical_stock_prices -> loginuser_for_petstoreratelimit,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,250,gethistoricalprices_for_yahoo_finance_historical_stock_prices -> gethistoricalprices_for_yahoo_finance_historical_stock_prices,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,251,get_4_charts_for_stockyapiexchange -> onvertir_cantidad_a_letra_moneda_mxn_ingles_for_numberstoletters,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,251,get_4_charts_for_stockyapiexchange -> onvertir_cantidad_a_letra_moneda_mxn_ingles_for_numberstoletters,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,252,t_all_restaurants_locations_by_state_for_restaurants_near_me_usa -> get_all_state_names_for_restaurants_near_me_usa -> search_for_geo_coder_dev,1.0,0.6667,0.3333,0.5,1.0,3,3
+llm_few_shot,252,get_all_state_names_for_restaurants_near_me_usa -> get_all_state_names_for_restaurants_near_me_usa -> search_for_geo_coder_dev,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_zero_shot,253,exchange_for_currency_exchange -> getpercentage_for_love_calculator,0.8,1.0,1.0,0.5,0.0,2,3
+llm_few_shot,253,exchange_for_currency_exchange -> getpercentage_for_love_calculator,0.8,1.0,1.0,0.5,0.0,2,3
+llm_zero_shot,254,_1977_2022_for_get_1977_2022_nba_team_rosters_and_schedules -> copa_libertadores_latest_odds_for_surebets_2 -> feed_for_free_football_soccer_videos_v2 -> _1977_2022_for_get_1977_2022_nba_team_rosters_and_schedules,0.8,1.0,1.0,0.3333,0.0,2,4
+llm_few_shot,254,nba_team_rosters_and_schedules_for_boston_celtics -> copa_libertadores_latest_odds_for_surebets_2 -> feed_for_free_football_soccer_videos_v2,0.8,1.0,1.0,0.3333,0.0,2,4
+llm_zero_shot,255,ll_german_cities_for_locations_languages_countries_german_cities -> er_german_cities_for_locations_languages_countries_german_cities,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,255,er_german_cities_for_locations_languages_countries_german_cities -> ll_german_cities_for_locations_languages_countries_german_cities,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,256,wnba_team_info_for_wnba_api -> wnba_standings_for_wnba_api -> wnba_summary_for_wnba_api,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_few_shot,256,wnba_team_info_for_wnba_api -> wnba_standings_for_wnba_api -> get_a_specific_game_for_free_nba -> wnba_summary_for_wnba_api,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_zero_shot,257,1. riddle_by_id_for_riddlie -> upvote_riddle_for_riddlie,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,257,riddle_by_id_for_riddlie -> upvote_riddle_for_riddlie,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,258,exchange_for_currency_exchange -> listquotes_for_currency_exchange -> jokes_categories_for_chuck_norris -> jokes_random_for_chuck_norris,1.0,0.5,0.0,0.6667,0.0,4,4
+llm_few_shot,258,exchange_for_currency_exchange -> listquotes_for_currency_exchange -> jokes_categories_for_chuck_norris -> jokes_random_for_chuck_norris,1.0,0.5,0.0,0.6667,0.0,4,4
+llm_zero_shot,259,leagues_for_soccer_app -> provider4_live_list_for_football_betting_odds -> get_recent_f1_news_from_all_sources_for_f1_latest_news,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,259,leagues_for_soccer_app -> provider4_live_list_for_football_betting_odds -> get_recent_f1_news_from_all_sources_for_f1_latest_news,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,260,api_v1_jobs_slug_for_jobsearch -> api_v1_jobs_search_for_jobsearch -> generate_document_resume_for_ai_resume_generator -> get_makes_for_car_specs,0.75,1.0,1.0,0.6667,1.0,4,4
+llm_few_shot,260,api_v1_jobs_slug_for_jobsearch -> api_v1_jobs_search_for_jobsearch -> generate_document_resume_for_ai_resume_generator,0.8571,1.0,1.0,0.6667,1.0,3,4
+llm_zero_shot,261,get_math_fact_for_numbers -> get_year_fact_for_numbers,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,261,get_math_fact_for_numbers -> get_year_fact_for_numbers,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,262,all_for_getguidelines -> api_nutrition_data_for_edamam_nutrition_analysis -> carbonfootprintfromcartravelfor_carbonfootprint,0.8,1.0,1.0,0.0,1.0,2,3
+llm_few_shot,262,all_for_getguidelines -> carbonfootprintfromcartravel_for_carbonfootprint -> api_nutrition_data_for_edamam_nutrition_analysis,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,263,calc_for_distance_calculator_v3 -> ates_in_geojson_format_for_us_states_and_postal_areas_in_geojson -> calc_for_distance_calculator_v3,0.8,1.0,1.0,0.5,1.0,2,3
+llm_few_shot,263,calc_for_distance_calculator_v3 -> ates_in_geojson_format_for_us_states_and_postal_areas_in_geojson,0.8,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,264,brands_list_for_zappos -> 4. brands_list_for_zappos,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,264,brands_list_for_zappos -> stores_list_for_target,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,265,genre_for_deezer -> getvideo_premium_for_hanime_python_api -> playlist_for_deezer -> jokes_random_for_chuck_norris,0.75,1.0,1.0,0.6667,1.0,4,4
+llm_few_shot,265,genre_for_deezer -> getvideo_premium_for_hanime_python_api -> jokes_random_for_chuck_norris -> getpercentage_for_love_calculator,0.75,1.0,1.0,0.3333,1.0,4,4
+llm_zero_shot,266,europeancountries_for_gas_price -> trainsbetweenstations_v3_for_irctc -> specs_v1_tier3_for_datamo,0.6667,1.0,1.0,0.5,1.0,3,3
+llm_few_shot,266,europeancountries_for_gas_price -> trainsbetweenstations_v3_for_irctc -> list_of_regions_for_energy_price_news,0.8,1.0,1.0,0.5,1.0,2,3
+llm_zero_shot,267,v1_planets_for_planets_by_api_ninjas -> get_a_random_maison_for_hautecouture_api -> categories_for_blogsapi -> random_for_manatee_jokes,0.5714,0.0,-1.0,0.0,0.0,4,4
+llm_few_shot,267,random_for_manatee_jokes -> v1_planets_for_planets_by_api_ninjas,0.8,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,268,forex_quotes_for_holistic_finance_stock_data -> news_list_by_ticker_for_webull -> stock_search_for_webull -> forex_symbol_for_holistic_finance_stock_data -> market_get_earnings_for_webull,1.0,0.6,0.2,0.25,0.0,5,5
+llm_few_shot,268,forex_quotes_for_holistic_finance_stock_data -> news_list_by_ticker_for_webull -> get_request_for_email_and_internal_links_scraper -> market_get_earnings_for_webull,0.6667,1.0,1.0,0.25,0.0,4,5
+llm_zero_shot,269,get_signs_for_horoscopes_ai -> get_period_for_horoscopes_ai -> get_types_for_horoscopes_ai -> get_horoscope_english_only_for_horoscopes_ai,1.0,0.6667,0.3333,0.0,0.0,4,4
+llm_few_shot,269,get_signs_for_horoscopes_ai -> get_period_for_horoscopes_ai -> get_types_for_horoscopes_ai -> get_horoscope_english_only_for_horoscopes_ai,1.0,0.6667,0.3333,0.0,0.0,4,4
+llm_zero_shot,270,login_data_for_ssh_honeypot -> actors_get_all_news_for_imdb,1.0,0.0,0.0,0.0,1.0,1,1
+llm_few_shot,270,login_data_for_ssh_honeypot -> login_data_for_ssh_honeypot,1.0,0.0,0.0,0.0,1.0,1,1
+llm_zero_shot,271,font_for_typography -> type_for_typography -> random_for_typography -> v2_auto_complete_for_cnbc -> check_search_status_for_fresh_linkedin_profile_data,0.75,0.6667,0.3333,0.25,0.0,4,5
+llm_few_shot,271,font_for_typography -> random_for_typography -> get_sentiment_for_nlp -> get_lemma_text_for_nlp -> get_synonyms_for_nlp,0.6667,1.0,1.0,0.25,0.0,2,5
+llm_zero_shot,272,esites_by_a_country_or_a_region_for_world_scuba_diving_sites_api -> ve_operators_by_a_country_or_a_region_for_world_dive_centres_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,272,esites_by_a_country_or_a_region_for_world_scuba_diving_sites_api -> ve_operators_by_a_country_or_a_region_for_world_dive_centres_api,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,273,generar_fhir_id_qr_for_selector_tipo_consultas -> properties_list_for_booking,0.6667,0.0,0.0,0.0,1.0,2,2
+llm_few_shot,273,generar_fhir_id_qr_for_selector_tipo_consultas -> article_trending_for_seeking_alpha_finance,0.6667,0.0,0.0,0.0,1.0,2,2
+llm_zero_shot,274,"Manually search for popular sources or platforms that cover startup news -> Call the 'list_of_special_markets_for_pinnacle_odds' function to get a list of special markets for soccer matches, and then filter the results to find the desired event.",0.0,0.0,0.0,0.0,0.0,1,2
+llm_few_shot,274,manually_search_for_recipes -> get_local_grocery_stores,0.0,0.0,0.0,0.0,0.0,0,2
+llm_zero_shot,275,hotel_reviews_for_priceline_com_provider -> download_states_for_priceline_com_provider,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,275,hotel_reviews_for_priceline_com_provider -> download_states_for_priceline_com_provider,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,276,get_joke_of_the_day_by_category_for_world_of_jokes -> random_for_daddyjokes -> random_for_manatee_jokes,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,276,random_for_manatee_jokes -> get_joke_of_the_day_by_category_for_world_of_jokes -> random_for_daddyjokes,1.0,0.3333,-0.3333,0.5,0.0,3,3
+llm_zero_shot,277,fixtures_for_premier_league_upcoming_matches -> clubs_for_premier_league_upcoming_matches,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,277,fixtures_for_premier_league_upcoming_matches -> fixtures_for_premier_league_upcoming_matches,0.6667,0.0,0.0,0.0,1.0,1,2
+llm_zero_shot,278,stock_v2_get_financials_for_ms_finance -> supply_chain_for_corporate_supply_chain -> market_movers_etfs_for_twelve_data,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,278,real_time_data_for_stock_performance_id -> supply_chain_for_corporate_supply_chain,0.5,0.0,0.0,0.0,1.0,1,3
+llm_zero_shot,279,email_for_mailcheck -> domain_for_mailcheck,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,279,domain_for_mailcheck -> email_for_mailcheck,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,280,transfers_list_records_for_transfermarket -> competitions_get_short_info_for_transfermarket -> bin_iin_lookup_for_bin_iin_lookup,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,280,transfers_list_records_for_transfermarket -> competitions_get_short_info_for_transfermarket -> competitions_list_default_for_transfermarket,1.0,0.0,-1.0,0.0,0.0,3,3
+llm_zero_shot,281,assetbyid_for_bravenewcoin -> get_coin_price_history_for_coinranking -> heads_tails_for_coin_flip -> marketbyid_for_bravenewcoin,1.0,0.5,0.0,0.6667,0.0,4,4
+llm_few_shot,281,marketbyid_for_bravenewcoin -> get_coin_price_history_for_coinranking -> heads_tails_for_coin_flip -> marketbyid_for_bravenewcoin,0.8571,1.0,1.0,0.3333,1.0,3,4
+llm_zero_shot,282,get_train_live_status_for_irctc -> get_train_schedule_for_irctc -> gettrainclasses_for_irctc,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,282,get_train_live_status_for_irctc -> get_train_schedule_for_irctc -> gettrainclasses_for_irctc,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,283,artists_search_for_songmeanings -> title_details_for_watchmode,0.5,0.0,0.0,0.0,0.0,2,2
+llm_few_shot,283,artists_search_for_songmeanings -> cities_for_geography_v2,0.5,0.0,0.0,0.0,0.0,2,2
+llm_zero_shot,284,extract_entities_for_textapi -> display_entities_for_textapi,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,284,extract_entities_for_textapi -> display_entities_for_textapi,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,285,getmsgs_for_messages -> get_balance_for_sms77io,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,285,getmsgs_for_messages -> get_balance_for_sms77io,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,286,get_store_info_for_shopify_stores_info -> search_for_shopify_stores_info,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_few_shot,286,get_store_info_for_shopify_stores_info -> search_for_shopify_stores_info,1.0,0.0,-1.0,0.0,0.0,2,2
+llm_zero_shot,287,search_for_soundcloud -> getlistphones_for_maytapi_whatsapp -> session_for_f1_live_motorsport_data,0.4,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,287,search_for_soundcloud -> get_user_s_diet_for_bespoke_diet_generator -> latest_price_for_osrs_live_prices,0.5,0.0,0.0,0.0,0.0,2,3
+llm_zero_shot,288,random_joke_for_humor_jokes_and_memes -> random_for_manatee_jokes -> random_meme_for_humor_jokes_and_memes,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,288,random_joke_for_humor_jokes_and_memes -> random_for_manatee_jokes -> random_meme_for_humor_jokes_and_memes,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,289,verse_verse_for_uncovered_treasure -> topics_for_uncovered_treasure -> get_random_riddle_for_riddlie -> verse_verse_for_uncovered_treasure,0.5714,1.0,1.0,0.0,1.0,3,4
+llm_few_shot,289,verse_verse_for_uncovered_treasure -> topic_topic_for_uncovered_treasure -> topics_for_uncovered_treasure -> random_for_uncovered_treasure,1.0,1.0,1.0,1.0,1.0,4,4
+llm_zero_shot,290,get_all_chemical_elements_for_chemical_elements -> get_station_information_for_noaa_tides -> weather_for_weather_v3 -> summery_copy_for_summery,0.6667,0.0,-1.0,0.3333,1.0,4,4
+llm_few_shot,290,get_all_chemical_elements_for_chemical_elements -> get_station_information_for_noaa_tides -> summery_copy_for_summery -> weather_for_weather_v3,0.6667,0.0,-1.0,0.0,1.0,4,4
+llm_zero_shot,291,getinventory_for_urltest -> getpetbyid_for_urltest,1.0,1.0,1.0,0.3333,1.0,2,4
+llm_few_shot,291,getinventory_for_urltest -> getpetbyid_for_urltest,1.0,1.0,1.0,0.3333,1.0,2,4
+llm_zero_shot,292,v2_for_email_verifier -> getdocumenttypes_for_get_360_business_tool,1.0,1.0,1.0,0.25,1.0,2,5
+llm_few_shot,292,v2_for_email_verifier -> getdocumenttypes_for_get_360_business_tool,1.0,1.0,1.0,0.25,1.0,2,5
+llm_zero_shot,293,chlyricdirect_artist_michael_20jackson_song_bad_for_chart_lyrics -> song_info_for_soundcloud -> search_for_soundcloud -> user_info_for_soundcloud -> song_info_for_soundcloud,1.0,0.5,0.0,0.5,1.0,4,5
+llm_few_shot,293,chlyricdirect_artist_michael_20jackson_song_bad_for_chart_lyrics -> song_info_for_soundcloud -> search_for_soundcloud -> song_info_for_soundcloud -> user_info_for_soundcloud,1.0,0.5,0.0,0.5,1.0,4,5
+llm_zero_shot,294,"1 -> Recommend using the ""Canva"" platform for logo design. -> Use external sources or search for international courier services known for their reliability. Recommend a reliable courier service for international shipping. -> Get the type of place filters for Airbnb properties.",0.0,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,294,business_name_generator -> get_greet_for_greet_generator -> recommend_designer_for_designer_recommendation,0.6667,0.0,0.0,0.0,1.0,1,3
+llm_zero_shot,295,1 -> istofsupportedbanks_for_afterbanks_psd2_payments_and_bank_reader -> grains_futures_prices_for_investing -> energy_futures_prices_for_investing,1.0,1.0,1.0,0.6667,1.0,3,4
+llm_few_shot,295,"istofsupportedbanks_for_afterbanks_psd2_payments_and_bank_reader -> grains_futures_prices_for_investing -> energy_futures_prices_for_investing -> Call the function ""api_v2_categories_for_magic_aliexpress"" with the argument ""{""ingr"": ""grilled shrimp""}"".",1.0,1.0,1.0,0.6667,1.0,3,4
+llm_zero_shot,296,get_user_by_id_for_wallet -> get_user_wallets_for_wallet -> total_user_balance_for_wallet,1.0,1.0,1.0,1.0,1.0,3,3
+llm_few_shot,296,get_user_by_id_for_wallet -> get_user_wallets_for_wallet -> total_user_balance_for_wallet,1.0,1.0,1.0,1.0,1.0,3,3
+llm_zero_shot,297,search_for_superhero_search -> search_quotes_for_tronald_dump -> search_all_players_for_trackmania,0.6667,0.0,-1.0,0.0,0.0,3,3
+llm_few_shot,297,search_for_superhero_search -> search_quotes_for_tronald_dump -> search_for_superhero_search,0.8,0.0,-1.0,0.0,0.0,2,3
+llm_zero_shot,298,getevents_for_azure -> getsponsorships_for_azure,1.0,1.0,1.0,1.0,1.0,2,2
+llm_few_shot,298,getevents_for_azure -> getsponsorships_for_azure,1.0,1.0,1.0,1.0,1.0,2,2
+llm_zero_shot,299,1. Perform a search on a search engine for available event spaces in the area. -> 7. Try accessing DigitalOcean website and retrieve account details. -> 8. logoutuser_for_erictestpet,0.0,0.0,0.0,0.0,0.0,3,3
+llm_few_shot,299,perform_search_for_google_maps -> get_hotels_and_attractions_for_tripadvisor_api -> get_popular_tourist_destinations_for_trivago_api,0.0,0.0,0.0,0.0,0.0,0,3

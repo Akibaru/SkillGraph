@@ -1,0 +1,28 @@
+# GNN (for gnn_transition.py)
+torch>=2.0
+torch_geometric>=2.4
+
+# Core graph
+networkx>=3.2
+python-louvain>=0.16       # community detection (import as `community`)
+
+# Numerical / data
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+
+# Visualisation
+matplotlib>=3.8
+seaborn>=0.13
+pyvis>=0.3.2
+
+# LLM / tokenisation
+openai>=1.14
+tiktoken>=0.6
+
+# Data utilities
+tqdm>=4.66
+jsonlines>=4.0
+datasets>=2.18              # HuggingFace datasets — for ToolBench download
+huggingface_hub>=0.21

@@ -1,0 +1,11 @@
+metric,comparison,method_a,method_b,obs_diff,ci_lo,ci_hi,p_one_sided,significant_95
+ordered_precision,TS-Hybrid+HR vs Hybrid Sem-Graph,ts_hybrid_hybrid_rerank,hybrid,0.0223,0.0176,0.027,0.0,True
+ordered_precision,TS-Hybrid+HR vs Beam Search,ts_hybrid_hybrid_rerank,beam,0.0034,-0.0031,0.0098,0.1534,False
+ordered_precision,TS-Sem+HR vs TS-Sem+SemSort,ts_sem_hybrid_rerank,ts_sem_semsort,0.0189,0.0142,0.0235,0.0,True
+ordered_precision,TS-Hybrid+LR vs TS-Hybrid+HR,ts_hybrid_learned_rerank,ts_hybrid_hybrid_rerank,0.0036,0.0,0.0072,0.0246,True
+ordered_precision,TS-Hybrid+LR vs Hybrid Sem-Graph,ts_hybrid_learned_rerank,hybrid,0.026,0.0212,0.0309,0.0,True
+kendall_tau,TS-Hybrid+HR vs Hybrid Sem-Graph,ts_hybrid_hybrid_rerank,hybrid,0.0447,0.0352,0.054,0.0,True
+kendall_tau,TS-Hybrid+HR vs Beam Search,ts_hybrid_hybrid_rerank,beam,-0.0005,-0.0092,0.0081,0.5468,False
+kendall_tau,TS-Sem+HR vs TS-Sem+SemSort,ts_sem_hybrid_rerank,ts_sem_semsort,0.0378,0.0285,0.047,0.0,True
+kendall_tau,TS-Hybrid+LR vs TS-Hybrid+HR,ts_hybrid_learned_rerank,ts_hybrid_hybrid_rerank,0.0073,0.0001,0.0145,0.0242,True
+kendall_tau,TS-Hybrid+LR vs Hybrid Sem-Graph,ts_hybrid_learned_rerank,hybrid,0.052,0.0423,0.0617,0.0,True
